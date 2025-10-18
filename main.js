@@ -62,6 +62,7 @@
     const addGlobalStyles = () => {
         const style = document.createElement('style');
         style.textContent = `
+            @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
             @keyframes fadeIn {
                 from { opacity: 0; transform: scale(0.95); }
                 to { opacity: 1; transform: scale(1); }
@@ -85,7 +86,7 @@
         position: fixed; top: 0; left: 0; width: 100%; height: 100%;
         background: rgba(0, 0, 0, 0.85); z-index: 9999; display: flex;
         justify-content: center; align-items: center; color: white;
-        font-family: sans-serif; padding: 20px; box-sizing: border-box;
+        font-family: 'Noto Sans JP', sans-serif; padding: 20px; box-sizing: border-box;
     `;
     document.body.appendChild(overlay);
 
@@ -123,7 +124,7 @@
     overlay.appendChild(globalCloseButton);
 
     /**
-     * * @returns {Promise<{mode: string, delay: number, scanMode: string, bestConstThreshold: number, newConstThreshold: number}>} - 選択された設定を解決するPromise
+     * @returns {Promise<{mode: string, delay: number, scanMode: string, bestConstThreshold: number, newConstThreshold: number}>} - 選択された設定を解決するPromise
      */
     const askForSettings = () => {
         return new Promise(resolve => {
@@ -139,8 +140,9 @@
                 padding: 40px; border-radius: 20px;
                 box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7);
                 border: 1px solid rgba(255, 255, 255, 0.08);
-                text-align: center; width: 700px; max-height: 90vh; overflow-y: auto;
+                text-align: center; width: 90%; max-width: 700px; max-height: 90vh; overflow-y: auto;
                 backdrop-filter: blur(6px);
+                animation: fadeIn 0.5s ease-out;
             `;
 
             const title = document.createElement('h2');
@@ -161,7 +163,7 @@
             scanModeLabel.style.cssText = 'display: block; font-size: 18px; font-weight: bold; color: #e5e7eb; margin-bottom: 12px;';
             scanModeSection.appendChild(scanModeLabel);
             const scanModeButtonsContainer = document.createElement('div');
-            scanModeButtonsContainer.style.cssText = 'display: flex; justify-content: center; gap: 16px;';
+            scanModeButtonsContainer.style.cssText = 'display: flex; justify-content: center; gap: 16px; flex-wrap: wrap;';
             const constThresholdSection = document.createElement('div');
             constThresholdSection.style.cssText = 'margin-top: 20px; display: none;';
 
@@ -170,7 +172,7 @@
                 button.innerHTML = text;
                 button.dataset.scanMode = scanMode;
                 button.style.cssText = `
-                    flex: 1; padding: 14px; font-size: 15px; font-weight: bold; cursor: pointer;
+                    flex: 1; min-width: 220px; padding: 14px; font-size: 15px; font-weight: bold; cursor: pointer;
                     background-color: #0d1117; color: #e5e7eb; border: 1px solid #263041; border-radius: 10px;
                     transition: all 0.2s ease-out;
                 `;
@@ -207,7 +209,7 @@
 
             // 無料ユーザーはconstantの最小値を設定しないと恐ろしいことになるよ
             const constInputsContainer = document.createElement('div');
-            constInputsContainer.style.cssText = 'display: flex; justify-content: center; gap: 24px; align-items: center;';
+            constInputsContainer.style.cssText = 'display: flex; justify-content: center; gap: 24px; align-items: center; flex-wrap: wrap;';
 
             // ベスト枠・新曲枠用の入力を作成するヘルパー関数
             const createConstInput = (labelText, value, callback) => {
@@ -226,7 +228,10 @@
                 input.style.cssText = `
                     width: 100px; padding: 10px; font-size: 18px; text-align: center;
                     background-color: #0d1117; color: #e5e7eb; border: 1px solid #263041; border-radius: 8px;
+                    transition: border-color 0.2s;
                 `;
+                input.onfocus = () => { input.style.borderColor = '#00D4FF'; };
+                input.onblur = () => { input.style.borderColor = '#263041'; };
                 input.onchange = () => {
                     const val = parseFloat(input.value);
                     if (!isNaN(val) && val >= 13.0 && val <= 15.4) {
@@ -322,7 +327,7 @@
             modeLabel.style.cssText = 'display: block; font-size: 18px; font-weight: bold; color: #e5e7eb; margin-bottom: 12px;';
             modeSection.appendChild(modeLabel);
             const modeButtonsContainer = document.createElement('div');
-            modeButtonsContainer.style.cssText = 'display: flex; justify-content: center; gap: 16px;';
+            modeButtonsContainer.style.cssText = 'display: flex; justify-content: center; gap: 16px; flex-wrap: wrap;';
             const generateButton = document.createElement('button');
             const createModeButton = (text, mode) => {
                 const button = document.createElement('button');
@@ -398,6 +403,30 @@
 
     const updateMessage = (text, progress) => {
         console.log(text);
+
+        if (!document.body.contains(message)) {
+            message.style.cssText = `
+                position: absolute;
+                background-color: rgba(11, 15, 19, 0.9);
+                padding: 40px;
+                border-radius: 15px;
+                width: 90%;
+                max-width: 600px;
+                box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+                border: 1px solid rgba(255, 255, 255, 0.1);
+                text-align: center;
+                animation: fadeIn 0.5s;
+            `;
+            message.innerHTML = `
+                <div class="progress-text" style="font-size: 18px; color: #e5e7eb; margin-bottom: 25px; transition: opacity 0.2s;">${text}</div>
+                <div class="progress-bar-container" style="background-color: #1f2937; border-radius: 10px; height: 12px; overflow: hidden; box-shadow: inset 0 2px 4px rgba(0,0,0,0.4);">
+                    <div class="progress-bar-inner" style="width: 0%; height: 100%; background: linear-gradient(90deg, #38bdf8, #3b82f6); border-radius: 10px; transition: width 0.5s cubic-bezier(0.25, 1, 0.5, 1);"></div>
+                </div>
+            `;
+            overlay.innerHTML = '';
+            overlay.appendChild(message);
+            overlay.appendChild(globalCloseButton);
+        }
 
         const textElement = message.querySelector('.progress-text');
         if (textElement) {
@@ -574,7 +603,7 @@
             const img = new Image();
             img.crossOrigin = "anonymous";
             img.onload = () => resolve(img);
-            img.onerror = (err) => reject(err);
+            img.onerror = (err) => reject(new Error(`画像の読み込みに失敗しました: ${url}`));
             img.src = url;
         });
     };
@@ -706,6 +735,7 @@
             backgroundImage = await loadImage(bgUrl);
         } catch (e) {
             console.error("背景画像の読み込みに失敗しました:", e);
+            // フォールバック用の背景を準備
         }
 
         const canvas = document.createElement('canvas');
@@ -751,21 +781,13 @@
             return { finalY: currentY, lines: lineCount };
         };
 
-        /*const calculateAverageRating = (list) => {
-            if (!list || list.length === 0) return 0.0;
-            const total = list.reduce((sum, song) => sum + song.rating, 0);
-            return total / list.length;
-        };*/
         const calculateAverageRating = (list) => {
-            if (!list || list.length === 0) {
-                return 0.0;
-            }
-
+            if (!list || list.length === 0) return 0.0;
             const total = list.reduce((sum, song) => sum + (song.rating ?? 0), 0);
             return total / list.length;
         };
 
-        // --- レイアウト定数 --- デザインは僕のはんちゅう外だから、概要だけ伝えてAIに決めてもらった。コメントはそのまま残す
+        // --- レイアウト定数 ---
         let WIDTH, COLS, BLOCK_WIDTH, CENTER_GAP;
         const PADDING = 30;
         const HEADER_HEIGHT = 280;
@@ -799,7 +821,7 @@
             canvas.height = HEADER_HEIGHT + Math.max(calcListHeight(bestList, COLS), calcListHeight(recentList, COLS)) + PADDING;
         }
 
-        // --- 背景描画 (画像 or フォールバック) ---
+        // --- 背景描画 ---
         if (backgroundImage) {
             ctx.drawImage(backgroundImage, 0, 0, canvas.width, canvas.height);
         } else {
@@ -810,7 +832,7 @@
             ctx.fillRect(0, 0, canvas.width, canvas.height);
         }
 
-        // --- ヘッダー描画 (新デザイン) ---
+        // --- ヘッダー描画 ---
         const headerX = PADDING / 2;
         const headerY = PADDING / 2;
         const headerW = WIDTH - PADDING;
@@ -836,444 +858,256 @@
         ctx.shadowBlur = 0;
 
         const now = new Date();
-        const timestamp = `${now.getFullYear()}/${String(now.getMonth() + 1).padStart(2, '0')}/${String(now.getDate()).padStart(2, '0')} ${String(now.getHours()).padStart(2, '0')}:${String(now.getMinutes()).padStart(2, '0')}`;
-        ctx.font = `28px ${FONT_FAMILY}`;
-        ctx.fillStyle = '#D1C4E9';
-        ctx.fillText(`Generated at: ${timestamp}`, leftX, headerY + 220);
+        const dateTimeString = `${now.getFullYear()}/${String(now.getMonth() + 1).padStart(2, '0')}/${String(now.getDate()).padStart(2, '0')} ${String(now.getHours()).padStart(2, '0')}:${String(now.getMinutes()).padStart(2, '0')}`;
+        ctx.font = `20px ${FONT_FAMILY}`;
+        ctx.fillStyle = '#888';
+        ctx.textAlign = 'left';
+        ctx.fillText(`Generated at: ${dateTimeString}`, leftX, headerY + headerH - 30);
 
-        const rightX = WIDTH - PADDING * 1.5;
+
+        const ratingX = WIDTH - PADDING * 1.5;
         ctx.textAlign = 'right';
 
-        ctx.font = `bold 32px ${FONT_FAMILY}`;
-        ctx.fillStyle = '#FFFFFF';
-        ctx.fillText(`PLAYER RATING`, rightX, headerY + 60);
+        const drawRatingBox = (label, value, valueColor, x, y, width, height) => {
+            ctx.font = `24px ${FONT_FAMILY}`;
+            ctx.fillStyle = '#B0A5C8';
+            ctx.fillText(label, x, y);
 
-        ctx.font = `bold 72px ${FONT_FAMILY}`;
-        ctx.fillStyle = '#00FFFF';
-        ctx.shadowColor = 'rgba(0, 255, 255, 0.9)';
-        ctx.shadowBlur = 20;
-        //ctx.fillText(playerData.rating, rightX, headerY + 130);
-        const formattedRating = parseFloat(playerData.rating).toFixed(2);
-        ctx.fillText(formattedRating, rightX, headerY + 130);
-        ctx.shadowBlur = 0;
-
-        const bestAvg = calculateAverageRating(bestList);
-        const recentAvg = calculateAverageRating(recentList);
-        ctx.font = `bold 24px ${FONT_FAMILY}`;
-        ctx.fillStyle = '#D1C4E9';
-        ctx.fillText(`BEST Avg: ${bestAvg.toFixed(4)}`, rightX, headerY + 185);
-        ctx.fillText(`NEW Avg: ${recentAvg.toFixed(4)}`, rightX, headerY + 220);
-
-        ctx.textAlign = 'left';
-
-        // --- 区切り線を描画 ---
-        ctx.save();
-        ctx.strokeStyle = 'rgba(0, 0, 0, 0.4)';
-        ctx.lineWidth = 2;
-        ctx.setLineDash([10, 10]);
-        ctx.beginPath();
-        if (mode === 'horizontal') {
-            const gridWidth = (BLOCK_WIDTH * COLS) + (PADDING * (COLS - 1));
-            const lineX = PADDING + gridWidth + (CENTER_GAP / 2);
-            ctx.moveTo(lineX, HEADER_HEIGHT + 15);
-            ctx.lineTo(lineX, canvas.height - PADDING - 30);
-        } else { // vertical
-            const lineY = HEADER_HEIGHT + calcListHeight(bestList, COLS) + (CENTER_GAP / 2);
-            ctx.moveTo(PADDING, lineY);
-            ctx.lineTo(WIDTH - PADDING, lineY);
-        }
-        ctx.stroke();
-        ctx.restore();
-
-        // --- 画像の事前読み込み ---
-        updateMessage("ジャケット画像を読み込み中...");
-        const allSongs = [...bestList, ...recentList];
-        const imagePromises = allSongs.map(song => new Promise(resolve => {
-            if (!song.jacketUrl) { resolve({ ...song, image: null }); return; }
-            const img = new Image();
-            img.crossOrigin = "anonymous";
-            img.onload = () => resolve({ ...song, image: img });
-            img.onerror = () => resolve({ ...song, image: null });
-            img.src = song.jacketUrl.replace('http://', 'https://');
-        }));
-        const songsWithImages = await Promise.all(imagePromises);
-
-        // --- 楽曲リスト描画関数 ---
-        const renderSongList = (title, list, startX, startY, cols, blockWidth) => {
-            ctx.font = `bold 38px ${FONT_FAMILY}`;
-            ctx.fillStyle = '#FFFFFF';
-            ctx.shadowColor = 'rgba(0, 0, 0, 0.8)';
-            ctx.shadowBlur = 10;
-            ctx.fillText(title, startX, startY + 45);
-            ctx.shadowColor = 'transparent';
+            ctx.font = `bold 64px ${FONT_FAMILY}`;
+            ctx.fillStyle = valueColor;
+            ctx.shadowColor = valueColor;
+            ctx.shadowBlur = 15;
+            ctx.fillText(value, x, y + 75);
             ctx.shadowBlur = 0;
-
-            list.forEach((song, i) => {
-                const row = Math.floor(i / cols);
-                const col = i % cols;
-                const x = startX + col * (blockWidth + PADDING);
-                const y = startY + 70 + row * (BLOCK_HEIGHT + PADDING);
-
-                // カード背景
-                ctx.fillStyle = 'rgba(0, 0, 0, 0.6)';
-                ctx.strokeStyle = 'rgba(255, 255, 255, 0.3)';
-                ctx.lineWidth = 1;
-                ctx.shadowColor = 'rgba(0, 0, 0, 0.5)';
-                ctx.shadowBlur = 15;
-                ctx.shadowOffsetX = 5;
-                ctx.shadowOffsetY = 5;
-                drawRoundRect(ctx, x, y, blockWidth, BLOCK_HEIGHT, 15);
-                ctx.fill();
-                ctx.stroke();
-                ctx.shadowColor = 'transparent';
-                ctx.shadowBlur = 0;
-                ctx.shadowOffsetX = 0;
-                ctx.shadowOffsetY = 0;
-
-                // ジャケット
-                const jacket_x = x + (blockWidth - JACKET_SIZE) / 2;
-                const jacket_y = y + 20;
-                if (song.image) {
-                    ctx.save();
-                    drawRoundRect(ctx, jacket_x, jacket_y, JACKET_SIZE, JACKET_SIZE, 10);
-                    ctx.strokeStyle = 'rgba(255, 255, 255, 0.5)';
-                    ctx.lineWidth = 2;
-                    ctx.stroke();
-                    ctx.clip();
-                    ctx.drawImage(song.image, jacket_x, jacket_y, JACKET_SIZE, JACKET_SIZE);
-                    ctx.restore();
-                } else {
-                    ctx.fillStyle = '#222';
-                    drawRoundRect(ctx, jacket_x, jacket_y, JACKET_SIZE, JACKET_SIZE, 10);
-                    ctx.fill();
-                }
-
-                // ジャケット右上の番号と難易度帯
-                const numberText = `#${i + 1}`;
-                ctx.font = `bold 30px ${FONT_FAMILY}`;
-                const textMetrics = ctx.measureText(numberText);
-                const textWidth = textMetrics.width;
-                const ribbonHeight = 38;
-                const ribbonWidth = textWidth + 20;
-                const ribbonX = jacket_x + JACKET_SIZE - ribbonWidth - 5;
-                const ribbonY = jacket_y + 5;
-                const difficultyInfo = {
-                    ULTIMA: { bg: 'linear-gradient(135deg, #a00, #310000)' },
-                    MASTER: { bg: '#8A2BE2' }, EXPERT: { bg: '#ff1100ff' },
-                    ADVANCED: { bg: '#FDD835' }, BASIC: { bg: '#7CB342' },
-                    UNKNOWN: { bg: '#9E9E9E' }
-                };
-                const diffStyle = difficultyInfo[song.difficulty] || difficultyInfo.UNKNOWN;
-                ctx.save();
-                if (song.difficulty === 'ULTIMA') {
-                    const grad = ctx.createLinearGradient(ribbonX, ribbonY, ribbonX + ribbonWidth, ribbonY);
-                    grad.addColorStop(0, '#a00'); grad.addColorStop(1, '#1a1a1a');
-                    ctx.fillStyle = grad;
-                } else { ctx.fillStyle = diffStyle.bg; }
-                drawRoundRect(ctx, ribbonX, ribbonY, ribbonWidth, ribbonHeight, 8);
-                ctx.fill();
-                ctx.restore();
-
-                ctx.textAlign = 'right';
-                ctx.lineJoin = 'round';
-                const numberX = ribbonX + ribbonWidth - 10;
-                const numberY = ribbonY + ribbonHeight - 8;
-                ctx.strokeStyle = 'rgba(0, 0, 0, 0.8)';
-                ctx.lineWidth = 6;
-                ctx.strokeText(numberText, numberX, numberY);
-                ctx.fillStyle = '#FFFFFF';
-                ctx.fillText(numberText, numberX, numberY);
-                ctx.textAlign = 'left';
-                ctx.lineWidth = 1;
-
-                // テキスト描画
-                let current_y = jacket_y + JACKET_SIZE + 30;
-                const text_x_padded = x + 15;
-                const text_width = blockWidth - 30;
-                const titleLineHeight = 22;
-                ctx.fillStyle = '#FFFFFF';
-                ctx.font = `bold 17px ${FONT_FAMILY}`;
-                const titleInfo = wrapText(ctx, song.title, text_x_padded, current_y, text_width, titleLineHeight, 'center', 2);
-                current_y = titleInfo.finalY + (titleInfo.lines === 1 ? titleLineHeight : 0);
-                current_y += 28;
-
-                // スコアとランク
-                const rankInfo = getRankInfo(song.score_int);
-                const scoreText = song.score_str;
-                const rankText = `[${rankInfo.rank}]`;
-                const gap = 8;
-                ctx.font = `bold 24px ${FONT_FAMILY}`;
-                const scoreWidth = ctx.measureText(scoreText).width;
-                ctx.font = `bold 16px ${FONT_FAMILY}`;
-                const rankWidth = ctx.measureText(rankText).width;
-                const totalWidth = scoreWidth + gap + rankWidth;
-                const score_x = x + (blockWidth - totalWidth) / 2;
-                if (rankInfo.rank === "SSS+" || rankInfo.rank === "SSS") {
-                    ctx.shadowColor = rankInfo.color;
-                    ctx.shadowBlur = 10;
-                }
-                ctx.font = `bold 24px ${FONT_FAMILY}`;
-                ctx.fillStyle = rankInfo.color;
-                ctx.fillText(scoreText, score_x, current_y);
-                ctx.font = `bold 16px ${FONT_FAMILY}`;
-                ctx.fillText(rankText, score_x + scoreWidth + gap, current_y);
-                ctx.shadowBlur = 0;
-                current_y += 38;
-
-                // データ行
-                const drawDataRow = (label, value, y_pos, valueColor = '#FFFFFF', valueFont = `bold 18px ${FONT_FAMILY}`) => {
-                    ctx.font = `16px ${FONT_FAMILY}`;
-                    ctx.fillStyle = '#B0A5C8';
-                    ctx.fillText(label, text_x_padded, y_pos);
-                    ctx.textAlign = 'right';
-                    ctx.font = valueFont;
-                    ctx.fillStyle = valueColor;
-                    ctx.fillText(value, x + blockWidth - 15, y_pos);
-                    ctx.textAlign = 'left';
-                };
-                drawDataRow('CONST', song.const ? song.const.toFixed(1) : 'N/A', current_y);
-                current_y += 30;
-                drawDataRow('プレイ回数', song.playCount || 'N/A', current_y);
-                current_y += 32;
-                drawDataRow('RATING', song.rating.toFixed(2), current_y, '#81D4FA', `bold 22px ${FONT_FAMILY}`);
-            });
         };
 
-        if (mode === 'vertical') {
-            const bestStartY = HEADER_HEIGHT;
-            const recentStartY = bestStartY + calcListHeight(bestList, COLS) + CENTER_GAP;
-            renderSongList("BEST", songsWithImages.slice(0, bestList.length), PADDING, bestStartY, COLS, BLOCK_WIDTH);
-            renderSongList("NEW", songsWithImages.slice(bestList.length), PADDING, recentStartY, COLS, BLOCK_WIDTH);
-        } else { // horizontal
-            const listsStartY = HEADER_HEIGHT;
-            const bestStartX = PADDING;
-            const gridWidth = (BLOCK_WIDTH * COLS) + (PADDING * (COLS - 1));
-            const recentStartX = PADDING + gridWidth + CENTER_GAP;
-            renderSongList("BEST", songsWithImages.slice(0, bestList.length), bestStartX, listsStartY, COLS, BLOCK_WIDTH);
-            renderSongList("NEW", songsWithImages.slice(bestList.length), recentStartX, listsStartY, COLS, BLOCK_WIDTH);
-        }
+        const maxRatingWidth = 250;
+        const recentRatingWidth = 250;
+        const bestRatingWidth = 250;
 
-        // --- フッター描画 ---
-        const footerFontSize = 40; 
-        const lineHeight = 52;     
+        drawRatingBox('MAX RATING', playerData.maxRating, '#FFB86C', ratingX, headerY + 50, maxRatingWidth, 100);
+        drawRatingBox('RECENT', calculateAverageRating(recentList).toFixed(4), '#8BE9FD', ratingX - maxRatingWidth - 50, headerY + 50, recentRatingWidth, 100);
+        drawRatingBox('BEST', calculateAverageRating(bestList).toFixed(4), '#50FA7B', ratingX - maxRatingWidth - recentRatingWidth - 100, headerY + 50, bestRatingWidth, 100);
 
-        ctx.font = `bold ${footerFontSize}px ${FONT_FAMILY}`;
-        ctx.fillStyle = 'rgba(71, 71, 71, 0.7)';
-        ctx.textAlign = 'right';
+        // --- 楽曲リスト描画 ---
+        const drawSongList = async (list, title, startY, startX, areaWidth, areaHeight) => {
+            ctx.font = `bold 48px ${FONT_FAMILY}`;
+            ctx.fillStyle = '#FFFFFF';
+            ctx.textAlign = 'left';
+            const titleWidth = ctx.measureText(title).width;
+            ctx.fillText(title, startX, startY);
 
-        const footerX = canvas.width - PADDING;
-        const secondLineY = canvas.height - PADDING + 10;
-        const firstLineY = secondLineY - lineHeight;
+            const titleUnderlineGradient = ctx.createLinearGradient(startX, 0, startX + titleWidth, 0);
+            titleUnderlineGradient.addColorStop(0, '#50FA7B');
+            titleUnderlineGradient.addColorStop(1, '#8BE9FD');
+            ctx.fillStyle = titleUnderlineGradient;
+            ctx.fillRect(startX, startY + 10, titleWidth, 4);
 
-        ctx.fillText('', footerX, firstLineY);
-        ctx.fillText('', footerX, secondLineY);
+            const listStartY = startY + 70;
+            let col = 0, row = 0;
 
-        // --- 結果表示 ---
-        updateMessage("画像を生成中...");
-        const dataUrl = canvas.toDataURL('image/jpeg', 0.9);
-        const currentOverlay = document.querySelector('div[style*="z-index: 9999"]');
-        if (currentOverlay) {
-            currentOverlay.innerHTML = '';
-            currentOverlay.style.alignItems = 'center';
-            currentOverlay.style.overflowY = 'auto';
+            const jacketPromises = list.map(song => loadImage(`https://corsproxy.io/?${encodeURIComponent(song.jacketUrl)}`).catch(e => {
+                console.error(e);
+                return null; // 画像が読めなくても処理は続行
+            }));
+            const jacketImages = await Promise.all(jacketPromises);
 
-            const resultContainer = document.createElement('div');
-            resultContainer.style.cssText = `
-                background-color: rgba(30, 30, 45, 0.9);
-                border-radius: 15px;
-                padding: 25px;
-                box-shadow: 0 10px 40px rgba(0,0,0,0.6);
-                border: 1px solid rgba(255, 255, 255, 0.1);
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                gap: 20px;
-            `;
+            for (let i = 0; i < list.length; i++) {
+                const song = list[i];
+                const jacketImg = jacketImages[i];
 
-            const title = document.createElement('h2');
-            title.textContent = '生成完了！';
-            title.style.cssText = 'font-size: 24px; font-weight: bold; color: #E0E0E0; margin: 0;';
+                const x = startX + col * (BLOCK_WIDTH + PADDING);
+                const y = listStartY + row * (BLOCK_HEIGHT + PADDING);
 
-            const resultImage = document.createElement('img');
-            resultImage.src = dataUrl;
-            resultImage.style.cssText = `
-                max-width: 90vw;
-                max-height: 75vh;
-                object-fit: contain;
-                border-radius: 10px;
-                box-shadow: 0 5px 20px rgba(0,0,0,0.4);
-                cursor: zoom-in;
-                transition: all 0.2s ease-in-out;
-            `;
+                // カード背景
+                ctx.fillStyle = 'rgba(10, 15, 20, 0.6)';
+                ctx.strokeStyle = `rgba(255,255,255, ${song.isNew ? 0.4 : 0.15})`;
+                ctx.lineWidth = song.isNew ? 2 : 1;
+                drawRoundRect(ctx, x, y, BLOCK_WIDTH, BLOCK_HEIGHT, 12);
+                ctx.fill();
+                ctx.stroke();
 
-            let isScaled = true;
-            resultImage.onclick = () => {
-                if (isScaled) {
-                    resultImage.style.maxWidth = 'none';
-                    resultImage.style.maxHeight = 'none';
-                    resultImage.style.cursor = 'zoom-out';
+                // ジャケット
+                const jacketX = x + (BLOCK_WIDTH - JACKET_SIZE) / 2;
+                const jacketY = y + PADDING * 0.7;
+                if (jacketImg) {
+                    ctx.drawImage(jacketImg, jacketX, jacketY, JACKET_SIZE, JACKET_SIZE);
                 } else {
-                    resultImage.style.maxWidth = '90vw';
-                    resultImage.style.maxHeight = '75vh';
-                    resultImage.style.cursor = 'zoom-in';
+                    ctx.fillStyle = '#333';
+                    ctx.fillRect(jacketX, jacketY, JACKET_SIZE, JACKET_SIZE);
+                    ctx.fillStyle = '#fff';
+                    ctx.font = `18px ${FONT_FAMILY}`;
+                    ctx.textAlign = 'center';
+                    ctx.fillText('No Image', jacketX + JACKET_SIZE/2, jacketY + JACKET_SIZE/2);
                 }
-                isScaled = !isScaled;
-            };
 
-            const buttonContainer = document.createElement('div');
-            buttonContainer.style.cssText = 'display: flex; gap: 15px;';
+                // 難易度
+                const diffColors = { "MASTER": "#C858E5", "ULTIMA": "#F44336", "EXPERT": "#FFC107" };
+                ctx.fillStyle = diffColors[song.difficulty] || "#9E9E9E";
+                ctx.font = `bold 20px ${FONT_FAMILY}`;
+                ctx.textAlign = 'center';
+                ctx.fillText(song.difficulty, x + BLOCK_WIDTH / 2, jacketY + JACKET_SIZE + 28);
+                
+                // 曲名
+                ctx.fillStyle = '#FFFFFF';
+                ctx.font = `bold ${BLOCK_WIDTH * 0.08}px ${FONT_FAMILY}`;
+                wrapText(ctx, song.title, x, jacketY + JACKET_SIZE + 48, BLOCK_WIDTH, BLOCK_WIDTH * 0.08 + 4, 'center', 2);
 
-            const createActionButton = (text, bgColor) => {
-                const button = document.createElement('button');
-                button.textContent = text;
-                button.style.cssText = `
-                    padding: 12px 25px;
-                    font-size: 16px;
-                    font-weight: bold;
-                    cursor: pointer;
-                    background-color: ${bgColor};
-                    color: white;
-                    border: none;
-                    border-radius: 8px;
-                    transition: transform 0.1s, opacity 0.2s;
-                `;
-                button.onmouseover = () => button.style.opacity = '0.85';
-                button.onmouseout = () => button.style.opacity = '1';
-                button.onmousedown = () => button.style.transform = 'scale(0.97)';
-                button.onmouseup = () => button.style.transform = 'scale(1)';
-                return button;
-            };
+                // スコア
+                const scoreY = y + BLOCK_HEIGHT - 65;
+                ctx.font = `bold ${BLOCK_WIDTH * 0.1}px ${FONT_FAMILY}`;
+                ctx.fillText(song.score_str, x + BLOCK_WIDTH / 2, scoreY);
+                const { rank, color } = getRankInfo(song.score_int);
+                ctx.fillStyle = color;
+                ctx.font = `bold ${BLOCK_WIDTH * 0.1}px ${FONT_FAMILY}`;
+                ctx.fillText(rank, x + BLOCK_WIDTH / 2, scoreY + BLOCK_WIDTH * 0.1);
 
-            const saveButton = createActionButton('画像を保存', '#4CAF50');
-            saveButton.onclick = () => {
-                const a = document.createElement('a');
-                a.href = dataUrl;
-                a.download = `chunithm-rating-${Date.now()}.png`;
-                a.click();
-            };
+                // レーティング値
+                ctx.fillStyle = '#BD93F9';
+                ctx.font = `bold ${BLOCK_WIDTH * 0.07}px ${FONT_FAMILY}`;
+                ctx.textAlign = 'left';
+                ctx.fillText(`C:${song.const.toFixed(1)}`, x + 15, y + BLOCK_HEIGHT - 15);
+                ctx.textAlign = 'right';
+                ctx.fillText(`R:${song.rating.toFixed(2)}`, x + BLOCK_WIDTH - 15, y + BLOCK_HEIGHT - 15);
 
-            const closeButton = createActionButton('閉じる', '#f44336');
-            closeButton.onclick = () => document.body.removeChild(currentOverlay);
+                col++;
+                if (col >= COLS) {
+                    col = 0;
+                    row++;
+                }
+            }
+        };
 
-            buttonContainer.appendChild(saveButton);
-            buttonContainer.appendChild(closeButton);
-            resultContainer.appendChild(title);
-            resultContainer.appendChild(resultImage);
-            resultContainer.appendChild(buttonContainer);
-            currentOverlay.appendChild(resultContainer);
-            currentOverlay.appendChild(globalCloseButton); // Re-append global close button
+        let bestListY = HEADER_HEIGHT;
+        let recentListY = HEADER_HEIGHT;
+        let bestListX = PADDING;
+        let recentListX = PADDING;
+
+        if (mode === 'vertical') {
+            await drawSongList(bestList, 'BEST (30)', bestListY, PADDING, WIDTH - PADDING * 2, calcListHeight(bestList, COLS));
+            recentListY = bestListY + calcListHeight(bestList, COLS) + CENTER_GAP;
+            await drawSongList(recentList, 'RECENT', recentListY, PADDING, WIDTH - PADDING * 2, calcListHeight(recentList, COLS));
+        } else {
+            const bestWidth = (BLOCK_WIDTH * COLS) + (PADDING * (COLS - 1));
+            recentListX = bestListX + bestWidth + CENTER_GAP;
+            await drawSongList(bestList, 'BEST (30)', bestListY, bestListX, bestWidth, canvas.height - HEADER_HEIGHT - PADDING);
+            await drawSongList(recentList, 'RECENT', recentListY, recentListX, bestWidth, canvas.height - HEADER_HEIGHT - PADDING);
         }
+
+        updateMessage("画像を生成しました。右クリックして保存してください。", 100);
+        const finalImage = new Image();
+        finalImage.src = canvas.toDataURL('image/png');
+        finalImage.style.cssText = 'max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 10px; box-shadow: 0 10px 40px rgba(0,0,0,0.5);';
+        
+        overlay.innerHTML = '';
+        overlay.appendChild(finalImage);
+        overlay.appendChild(globalCloseButton);
+
+        const downloadButton = document.createElement('a');
+        downloadButton.href = finalImage.src;
+        downloadButton.download = `chunithm_rating_${playerData.name}_${now.getTime()}.png`;
+        downloadButton.textContent = '画像をダウンロード';
+        downloadButton.style.cssText = `
+            position: absolute; bottom: 30px; left: 50%; transform: translateX(-50%);
+            padding: 15px 30px; background-color: #6272a4; color: white; border-radius: 8px;
+            text-decoration: none; font-size: 16px; transition: background-color 0.2s;
+        `;
+        downloadButton.onmouseover = () => { downloadButton.style.backgroundColor = '#7184b8'; };
+        downloadButton.onmouseout = () => { downloadButton.style.backgroundColor = '#6272a4'; };
+        overlay.appendChild(downloadButton);
     };
 
     // --- メイン処理 ---
-    try {
-        const { mode, delay, scanMode, bestConstThreshold, newConstThreshold } = await askForSettings();
-
-        if (isAborted) return;
-
-        overlay.innerHTML = '';
-
-        message.style.cssText = `
-            width: 500px; text-align: center;
-            animation: fadeIn 0.5s;
-        `;
-        message.innerHTML = `
-            <p class="progress-text" style="font-size: 20px; color: #E0E0E0; transition: opacity 0.2s;">
-                準備中...
-            </p>
-            <div class="progress-bar" style="width: 100%; height: 10px; background: rgba(0,0,0,0.3); border-radius: 5px; margin-top: 15px; overflow: hidden;">
-                <div class="progress-bar-inner" style="width: 0%; height: 100%; background: linear-gradient(90deg, #4A90E2, #81D4FA); border-radius: 5px; transition: width 0.5s ease-out;"></div>
-            </div>
-        `;
-        overlay.appendChild(message);
-        overlay.appendChild(globalCloseButton);
-
-        updateMessage("プレイヤー情報を取得中...", 5);
-        const playerDoc = await fetchDocument(URL_PLAYER_DATA);
-        if (isAborted) return;
-
-        let ratingString = '';
-        const ratingImages = playerDoc.querySelectorAll('.player_rating_num_block img');
-        ratingImages.forEach(img => {
-            const src = img.src;
-            const lastChar = src.charAt(src.length - 5);
-            ratingString += (lastChar === 'a') ? '.' : lastChar;
-        });
-
-        const playerData = {
-            name: playerDoc.querySelector('.player_name_in').innerText,
-            rating: ratingString,
-        };
-
-        updateMessage("譜面定数データをダウンロード中...", 10);
-        const constData = await fetch(CONST_DATA_URL).then(res => res.json());
-        if (isAborted) return;
-
-        let finalBestList = [];
-        let finalRecentList = [];
-
-        if (scanMode === 'free') {
-            updateMessage(`無料モード: ランキングから曲を検索します...`, 12);
-            const result = await fetchAllSongsForFreeUser(bestConstThreshold, newConstThreshold, delay, constData);
-            if (isAborted || !result) return;
-            
-            const { detailedNewSongs, detailedOldSongs } = result;
-
-            updateMessage("レーティングを計算中...", 98);
-            detailedNewSongs.forEach(song => song.rating = calculateRating(song.score_int, song.const));
-            detailedOldSongs.forEach(song => song.rating = calculateRating(song.score_int, song.const));
-            
-            detailedNewSongs.sort((a, b) => b.rating - a.rating);
-            detailedOldSongs.sort((a, b) => b.rating - a.rating);
-
-            finalBestList = detailedOldSongs.slice(0, 30);
-            finalRecentList = detailedNewSongs.slice(0, 20);
-
-        } else { // 有料ユーザー向け、というかみんなこっちを使った方が絶対いい
-            let detailedSongs = [];
-            updateMessage("BEST枠の曲リストを取得中...", 15);
-            const bestList = await scrapeRatingList(URL_RATING_BEST);
+    (async () => {
+        try {
+            const settings = await askForSettings();
             if (isAborted) return;
 
-            updateMessage("新曲枠の曲リストを取得中...", 20);
-            const recentList = await scrapeRatingList(URL_RATING_RECENT);
+            updateMessage("プレイヤー情報を取得中...", 5);
+            const playerDataDoc = await fetchDocument(URL_PLAYER_DATA);
+            const name = playerDataDoc.querySelector('.player_name_in').innerText;
+            const maxRating = playerDataDoc.querySelector('.rating_max .text_b').innerText;
+            const playerData = { name, maxRating };
+            if (isAborted) return;
+            
+            updateMessage("定数データを取得中...", 10);
+            const constDataResponse = await fetch(CONST_DATA_URL);
+            const constData = await constDataResponse.json();
             if (isAborted) return;
 
-            const allSongs = [...bestList, ...recentList];
+            let bestList, recentList;
 
-            for (let i = 0; i < allSongs.length; i++) {
-                if (isAborted) break;
-                const song = allSongs[i];
-                const progress = 20 + (i / allSongs.length) * 80;
+            if (settings.scanMode === 'paid') {
+                 // --- 課金ユーザー向け処理 ---
+                updateMessage("BEST枠のスコアを取得中...", 20);
+                bestList = await scrapeRatingList(URL_RATING_BEST);
+                if (isAborted) return;
 
-                if (i > 0 && delay > 0) {
-                    updateMessage(`待機中... (${delay.toFixed(1)}秒) - (${i}/${allSongs.length})`, progress);
-                    await sleep(delay * 1000);
+                updateMessage("RECENT枠のスコアを取得中...", 40);
+                recentList = await scrapeRatingList(URL_RATING_RECENT);
+                if (isAborted) return;
+
+                const allSongs = [...bestList, ...recentList];
+                const totalSongs = allSongs.length;
+                let processedCount = 0;
+
+                for (const song of allSongs) {
+                    if (isAborted) return;
+                    processedCount++;
+                    const progress = 50 + (processedCount / totalSongs) * 45;
+                    updateMessage(`楽曲詳細を取得中: ${song.title} (${processedCount}/${totalSongs})`, progress);
+
+                    if (settings.delay > 0 && processedCount > 1) {
+                         await sleep(settings.delay * 1000);
+                    }
+                    if (isAborted) return;
+                    
+                    try {
+                        const details = await scrapeMusicDetail(song.params);
+                        song.artist = details.artist;
+                        song.jacketUrl = details.jacketUrl;
+                        song.playCount = details.playCount;
+                    } catch (e) {
+                         console.warn(`詳細取得失敗: ${song.title}`, e.message);
+                         song.artist = 'N/A';
+                         song.jacketUrl = ''; // fallback
+                         song.playCount = 'N/A';
+                    }
+                    
+                    const songConstData = constData.find(c => c.title === song.title && (c.diff === song.difficulty || (c.diff === 'MAS' && song.difficulty === 'MASTER')));
+                    song.const = songConstData ? parseFloat(songConstData.const) : 0;
+                    song.rating = calculateRating(song.score_int, song.const);
+                    song.isNew = songConstData ? songConstData.version === CURRENT_VERSION : false;
                 }
+            } else {
+                 // --- 無料ユーザー向け処理 ---
+                 const { detailedNewSongs, detailedOldSongs } = await fetchAllSongsForFreeUser(settings.bestConstThreshold, settings.newConstThreshold, settings.delay, constData);
+                 if (isAborted) return;
+                 
+                 bestList = detailedOldSongs.map(song => ({
+                     ...song,
+                     rating: calculateRating(song.score_int, song.const),
+                     isNew: false
+                 })).sort((a,b) => b.rating - a.rating).slice(0,30);
 
-                if (isAborted) break;
-
-                updateMessage(`楽曲詳細を取得中: ${song.title} (${i + 1}/${allSongs.length})`, progress);
-                const details = await scrapeMusicDetail(song.params);
-
-                const difficultyMapToJson = { 'MASTER': 'MAS', 'EXPERT': 'EXP', 'ULTIMA': 'ULT', 'ADVANCED': 'ADV', 'BASIC': 'BAS' };
-                const diffAbbreviation = difficultyMapToJson[song.difficulty];
-                const matchedConst = constData.find(m => m.title === song.title && m.diff === diffAbbreviation)?.const;
-                const rating = calculateRating(song.score_int, matchedConst);
-
-                detailedSongs.push({ ...song, ...details, 'const': matchedConst || 0.0, rating });
+                 recentList = detailedNewSongs.map(song => ({
+                     ...song,
+                     rating: calculateRating(song.score_int, song.const),
+                     isNew: true
+                 })).sort((a,b) => b.score_int - a.score_int); // 新曲はスコア順？レート順？とりあえずスコア順
             }
-            if (isAborted) return;
-            finalBestList = detailedSongs.slice(0, bestList.length);
-            finalRecentList = detailedSongs.slice(bestList.length);
-        }
 
-        await generateImage(playerData, finalBestList, finalRecentList, mode);
 
-    } catch (error) {
-        if (isAborted) {
-            return;
+            updateMessage("画像生成の準備中...", 95);
+
+            bestList.sort((a, b) => b.rating - a.rating);
+            recentList.sort((a, b) => b.rating - a.rating);
+
+            await generateImage(playerData, bestList, recentList, settings.mode);
+
+        } catch (error) {
+            console.error("ブックマークレットの実行中にエラーが発生しました:", error);
+            showError(error.message);
         }
-        showError(error.message);
-    }
+    })();
 })();
