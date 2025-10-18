@@ -3,43 +3,40 @@ name: Update CHUNITHM Data
 
 # このワークフローが実行されるタイミングを指定
 on:
-  # 1. スケジュール実行
   schedule:
     # UTCの 0時, 6時, 12時, 18時 の各0分に実行
     - cron: '0 0,6,12,18 * * *'
   
-  # 2. 手動実行
   workflow_dispatch:
+
+# ★★★ ここからが重要な修正点 ★★★
+# このワークフローが持つ権限を定義します
+permissions:
+  # contents: write を指定することで、このワークフローが
+  # リポジトリにコードをプッシュする（書き込む）権限を持つようになります。
+  contents: write
 
 # 実行する一連のタスク（ジョブ）を定義
 jobs:
   build-and-commit:
-    # このジョブを実行する仮想環境
     runs-on: ubuntu-latest
-
-    # ジョブ内で実行されるステップ（手順）
     steps:
-      # ステップ1: リポジトリのコードをチェックアウト
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # ステップ2: Python環境をセットアップ
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.10'
 
-      # ステップ3: 必要なPythonライブラリをインストール
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install requests
 
-      # ★★★ ステップ4: 正しいファイル名でPythonスクリプトを実行 ★★★
       - name: Run script to update data
         run: python chunithm-update.py
 
-      # ステップ5: 変更があった場合のみ、コミットとプッシュを行う
       - name: Commit and push if there are changes
         run: |
           git config --global user.name "github-actions[bot]"
