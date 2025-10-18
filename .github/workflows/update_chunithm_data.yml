@@ -5,69 +5,49 @@ name: Update CHUNITHM Data
 on:
   # 1. スケジュール実行
   schedule:
-    # UTC（協定世界時）の 0時, 6時, 12時, 18時 の各0分に実行します。
-    # 日本時間(JST)では、おおよそ 午前9時, 午後3時, 午後9時, 午前3時 になります。
-    # cronの書式が正しくないとワークフロー全体が無効になるため、注意が必要です。
+    # UTCの 0時, 6時, 12時, 18時 の各0分に実行
     - cron: '0 0,6,12,18 * * *'
   
   # 2. 手動実行
-  # GitHubリポジトリの「Actions」タブから手動でこのワークフローを実行できるようにします。
   workflow_dispatch:
 
 # 実行する一連のタスク（ジョブ）を定義
 jobs:
-  # ジョブのID（build-and-commit）
   build-and-commit:
-    # このジョブを実行する仮想環境の種類を指定
+    # このジョブを実行する仮想環境
     runs-on: ubuntu-latest
 
     # ジョブ内で実行されるステップ（手順）
     steps:
-      # ステップ1: リポジトリのコードをチェックアウトする
-      # これにより、仮想環境にリポジトリのファイルがダウンロードされます。
+      # ステップ1: リポジトリのコードをチェックアウト
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # ステップ2: Python環境をセットアップする
+      # ステップ2: Python環境をセットアップ
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          # 使用するPythonのバージョンを指定
           python-version: '3.10'
 
-      # ステップ3: 必要なPythonライブラリをインストールする
-      # 'requests' ライブラリが必要です。
+      # ステップ3: 必要なPythonライブラリをインストール
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install requests
 
-      # ステップ4: Pythonスクリプトを実行してデータを更新する
-      # このコマンドで update_data.py を実行し、chunithm.json を生成・更新します。
-      # Pythonスクリプトの名前が違う場合は、この行を修正してください。
+      # ★★★ ステップ4: 正しいファイル名でPythonスクリプトを実行 ★★★
       - name: Run script to update data
-        run: python update_data.py
+        run: python chunithm-update.py
 
       # ステップ5: 変更があった場合のみ、コミットとプッシュを行う
       - name: Commit and push if there are changes
         run: |
-          # Gitのコミット時に使用するユーザー名とメールアドレスを設定
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          
-          # 更新された可能性のある chunithm.json ファイルをステージング
           git add chunithm.json
-          
-          # git diff でステージングされたファイルに変更があるかを確認
-          # --quiet をつけると、差分があれば終了コード1、なければ0を返す
           if ! git diff --staged --quiet; then
-            # 変更があった場合
-            echo "Changes detected. Committing and pushing..."
-            # 現在の日時をコミットメッセージに含める（オプション）
             git commit -m "Automated update of chunithm.json"
-            # GitHubリポジトリにプッシュして変更を反映
             git push
           else
-            # 変更がなかった場合
             echo "No changes to commit."
           fi
