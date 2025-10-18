@@ -135,44 +135,53 @@
 
             const container = document.createElement('div');
             container.style.cssText = `
-                background-color: rgba(40, 40, 55, 0.95);
+                background: linear-gradient(180deg, #0b0f13, #0e1216);
                 padding: 40px; border-radius: 20px;
-                box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
-                border: 1px solid rgba(255, 255, 255, 0.1);
-                text-align: center; width: 650px; max-height: 90vh; overflow-y: auto;
+                box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7);
+                border: 1px solid rgba(255, 255, 255, 0.08);
+                text-align: center; width: 700px; max-height: 90vh; overflow-y: auto;
+                backdrop-filter: blur(6px);
             `;
 
             const title = document.createElement('h2');
             title.textContent = 'CHUNITHM 画像ジェネレーター設定';
-           title.style.cssText = 'font-size: 28px; margin-bottom: 15px; font-weight: bold; color: #E0E0E0; line-height: 1.4;';
+            title.style.cssText = 'font-size: 28px; margin-bottom: 10px; font-weight: bold; color: #f5f5f5; line-height: 1.4;';
             container.appendChild(title);
 
             const subtitle = document.createElement('p');
             subtitle.innerHTML = '動作モード、画像レイアウト、取得間隔を設定してください <br> 取得間隔によってはCHUNITHM-NETのサーバーに負荷をかける可能性があります';
-            subtitle.style.cssText = 'font-size: 16px; margin-bottom: 30px; color: #B0B0B0;';
+            subtitle.style.cssText = 'font-size: 15px; margin-bottom: 28px; color: #9ca3af;';
             container.appendChild(subtitle);
 
             // 選択画面のUIとか
             const scanModeSection = document.createElement('div');
-            scanModeSection.style.cssText = 'margin-bottom: 30px;';
+            scanModeSection.style.cssText = 'margin-bottom: 28px;';
             const scanModeLabel = document.createElement('label');
             scanModeLabel.textContent = '動作モード';
-            scanModeLabel.style.cssText = 'display: block; font-size: 18px; font-weight: bold; color: #D0D0D0; margin-bottom: 15px;';
+            scanModeLabel.style.cssText = 'display: block; font-size: 18px; font-weight: bold; color: #e5e7eb; margin-bottom: 12px;';
             scanModeSection.appendChild(scanModeLabel);
             const scanModeButtonsContainer = document.createElement('div');
-            scanModeButtonsContainer.style.cssText = 'display: flex; justify-content: center; gap: 20px;';
+            scanModeButtonsContainer.style.cssText = 'display: flex; justify-content: center; gap: 16px;';
             const constThresholdSection = document.createElement('div');
-            constThresholdSection.style.cssText = 'margin-top: 25px; display: none;';
+            constThresholdSection.style.cssText = 'margin-top: 20px; display: none;';
 
             const createScanModeButton = (text, scanMode) => {
                 const button = document.createElement('button');
                 button.innerHTML = text;
                 button.dataset.scanMode = scanMode;
                 button.style.cssText = `
-                    flex: 1; padding: 15px; font-size: 16px; font-weight: bold; cursor: pointer;
-                    background-color: #333; color: white; border: 2px solid #555; border-radius: 8px;
+                    flex: 1; padding: 14px; font-size: 15px; font-weight: bold; cursor: pointer;
+                    background-color: #0d1117; color: #e5e7eb; border: 1px solid #263041; border-radius: 10px;
                     transition: all 0.2s ease-out;
                 `;
+                button.onmouseover = () => {
+                    button.style.transform = 'translateY(-2px)';
+                    button.style.boxShadow = '0 8px 20px rgba(0, 212, 255, 0.10)';
+                };
+                button.onmouseout = () => {
+                    button.style.transform = 'translateY(0)';
+                    button.style.boxShadow = 'none';
+                };
                 button.onclick = () => {
                     selectedScanMode = scanMode;
                     updateScanModeButtons();
@@ -184,8 +193,9 @@
             const updateScanModeButtons = () => {
                  document.querySelectorAll('button[data-scan-mode]').forEach(btn => {
                     const isSelected = btn.dataset.scanMode === selectedScanMode;
-                    btn.style.backgroundColor = isSelected ? '#4A90E2' : '#333';
-                    btn.style.borderColor = isSelected ? '#6FBFFF' : '#555';
+                    btn.style.backgroundColor = isSelected ? '#0f172a' : '#0d1117';
+                    btn.style.borderColor = isSelected ? '#00D4FF' : '#263041';
+                    btn.style.color = isSelected ? '#e6f9ff' : '#e5e7eb';
                 });
                 constThresholdSection.style.display = selectedScanMode === 'free' ? 'block' : 'none';
             };
@@ -197,14 +207,14 @@
 
             // 無料ユーザーはconstantの最小値を設定しないと恐ろしいことになるよ
             const constInputsContainer = document.createElement('div');
-            constInputsContainer.style.cssText = 'display: flex; justify-content: center; gap: 30px; align-items: center;';
+            constInputsContainer.style.cssText = 'display: flex; justify-content: center; gap: 24px; align-items: center;';
 
             // ベスト枠・新曲枠用の入力を作成するヘルパー関数
             const createConstInput = (labelText, value, callback) => {
                 const wrapper = document.createElement('div');
                 const label = document.createElement('label');
                 label.textContent = labelText;
-                label.style.cssText = 'display: block; font-size: 16px; color: #D0D0D0; margin-bottom: 10px;';
+                label.style.cssText = 'display: block; font-size: 14px; color: #cbd5e1; margin-bottom: 8px;';
                 wrapper.appendChild(label);
 
                 const input = document.createElement('input');
@@ -214,8 +224,8 @@
                 input.max = '15.4';
                 input.step = '0.1';
                 input.style.cssText = `
-                    width: 100px; padding: 8px; font-size: 18px; text-align: center;
-                    background-color: #222; color: white; border: 1px solid #555; border-radius: 5px;
+                    width: 100px; padding: 10px; font-size: 18px; text-align: center;
+                    background-color: #0d1117; color: #e5e7eb; border: 1px solid #263041; border-radius: 8px;
                 `;
                 input.onchange = () => {
                     const val = parseFloat(input.value);
@@ -244,7 +254,7 @@
 
             const freeModeWarning = document.createElement('p');
             freeModeWarning.innerHTML = '⚠️ <strong>注意:</strong> 無料ユーザーモードは公式サイトの楽曲ランキングから全曲のスコアを取得するため、完了までに<strong>数分以上</strong>かかる場合があります<br>また大量にアクセスするため、取得間隔によってはCHUNITHM-NETのサーバーに負荷をかける可能性があります';// CHUNITHM-NETのサーバーがどれだけの強度を誇るのかはわからない
-            freeModeWarning.style.cssText = 'font-size: 14px; margin-top: 15px; color: #FFC107; background-color: rgba(255, 193, 7, 0.1); padding: 10px; border-radius: 5px; border: 1px solid rgba(255, 193, 7, 0.3);';
+            freeModeWarning.style.cssText = 'font-size: 13px; margin-top: 12px; color: #f59e0b; background-color: rgba(245, 158, 11, 0.08); padding: 10px; border-radius: 8px; border: 1px solid rgba(245, 158, 11, 0.25);';
             constThresholdSection.appendChild(freeModeWarning);
             container.appendChild(constThresholdSection);
 
@@ -254,31 +264,33 @@
             delaySection.style.cssText = 'margin-bottom: 30px; margin-top: 20px;';
             const delayLabel = document.createElement('label');
             delayLabel.textContent = '取得間隔 (秒)';
-            delayLabel.style.cssText = 'display: block; font-size: 18px; font-weight: bold; color: #D0D0D0; margin-bottom: 15px;';
+            delayLabel.style.cssText = 'display: block; font-size: 18px; font-weight: bold; color: #e5e7eb; margin-bottom: 12px;';
             delaySection.appendChild(delayLabel);
             const delayControls = document.createElement('div');
-            delayControls.style.cssText = 'display: flex; justify-content: center; align-items: center;';
+            delayControls.style.cssText = 'display: flex; justify-content: center; align-items: center; gap: 8px;';
             const delayValueSpan = document.createElement('span');
             delayValueSpan.textContent = scrapeDelay.toFixed(1);
-            delayValueSpan.style.cssText = 'font-size: 24px; font-weight: bold; color: white; width: 80px;';
+            delayValueSpan.style.cssText = 'font-size: 24px; font-weight: bold; color: #7DD3FC; width: 80px;';
             const createControlButton = (text) => {
                 const button = document.createElement('button');
                 button.textContent = text;
                 button.style.cssText = `
-                    width: 50px; height: 50px; margin: 0 15px; font-size: 24px;
-                    cursor: pointer; background-color: #4A90E2; color: white;
-                    border: none; border-radius: 50%; transition: all 0.2s ease-out; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+                    width: 50px; height: 50px; margin: 0 10px; font-size: 24px;
+                    cursor: pointer; background-color: #0e1216; color: #e5e7eb;
+                    border: 1px solid #263041; border-radius: 50%; transition: all 0.2s ease-out; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
                 `;
                 button.onmouseover = () => {
-                    button.style.backgroundColor = '#357ABD';
-                    button.style.transform = 'scale(1.1)';
+                    button.style.backgroundColor = '#0f172a';
+                    button.style.transform = 'scale(1.08)';
+                    button.style.boxShadow = '0 0 0 3px rgba(0, 212, 255, 0.25)';
                 };
                 button.onmouseout = () => {
-                    button.style.backgroundColor = '#4A90E2';
+                    button.style.backgroundColor = '#0e1216';
                     button.style.transform = 'scale(1)';
+                    button.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.4)';
                 };
                 button.onmousedown = () => { button.style.transform = 'scale(0.95)'; };
-                button.onmouseup = () => { button.style.transform = 'scale(1.1)'; };
+                button.onmouseup = () => { button.style.transform = 'scale(1.08)'; };
                 return button;
             };
             const minusButton = createControlButton('-');
@@ -304,29 +316,28 @@
 
             // 個人的には横派
             const modeSection = document.createElement('div');
-            modeSection.style.cssText = 'margin-bottom: 40px;';
+            modeSection.style.cssText = 'margin-bottom: 36px;';
             const modeLabel = document.createElement('label');
             modeLabel.textContent = '画像レイアウト';
-            modeLabel.style.cssText = 'display: block; font-size: 18px; font-weight: bold; color: #D0D0D0; margin-bottom: 15px;';
+            modeLabel.style.cssText = 'display: block; font-size: 18px; font-weight: bold; color: #e5e7eb; margin-bottom: 12px;';
             modeSection.appendChild(modeLabel);
             const modeButtonsContainer = document.createElement('div');
-            modeButtonsContainer.style.cssText = 'display: flex; justify-content: center; gap: 20px;';
+            modeButtonsContainer.style.cssText = 'display: flex; justify-content: center; gap: 16px;';
             const generateButton = document.createElement('button');
             const createModeButton = (text, mode) => {
                 const button = document.createElement('button');
                 button.textContent = text;
                 button.dataset.mode = mode;
                 button.style.cssText = `
-                    display: inline-block; width: 200px; padding: 15px;
-                    font-size: 18px; font-weight: bold; cursor: pointer;
-                    background-color: #333; color: white;
-                    border: 2px solid #555; border-radius: 8px;
-                    transition: all 0.2s ease-out;
-                    transform: translateY(0);
+                    display: inline-block; width: 200px; padding: 14px;
+                    font-size: 16px; font-weight: bold; cursor: pointer;
+                    background-color: #0d1117; color: #e5e7eb;
+                    border: 1px solid #263041; border-radius: 10px;
+                    transition: all 0.2s ease-out; transform: translateY(0);
                 `;
                 button.onmouseover = () => {
-                    button.style.transform = 'translateY(-4px)';
-                    button.style.boxShadow = '0 6px 15px rgba(0, 0, 0, 0.3)';
+                    button.style.transform = 'translateY(-2px)';
+                    button.style.boxShadow = '0 8px 20px rgba(0, 212, 255, 0.10)';
                 };
                 button.onmouseout = () => {
                     button.style.transform = 'translateY(0)';
@@ -336,8 +347,9 @@
                     selectedMode = mode;
                     document.querySelectorAll('button[data-mode]').forEach(btn => {
                         const isSelected = btn.dataset.mode === selectedMode;
-                        btn.style.backgroundColor = isSelected ? '#4A90E2' : '#333';
-                        btn.style.borderColor = isSelected ? '#6FBFFF' : '#555';
+                        btn.style.backgroundColor = isSelected ? '#0f172a' : '#0d1117';
+                        btn.style.borderColor = isSelected ? '#00D4FF' : '#263041';
+                        btn.style.color = isSelected ? '#e6f9ff' : '#e5e7eb';
                     });
                     checkIfReady();
                 };
@@ -363,11 +375,11 @@
             generateButton.disabled = true;
             generateButton.style.cssText = `
                 width: 100%; padding: 18px; font-size: 20px; font-weight: bold;
-                cursor: not-allowed; background: linear-gradient(145deg, #5cb85c, #4cae4c);
-                color: white; border: none; border-radius: 10px; transition: all 0.2s; opacity: 0.5;
+                cursor: not-allowed; background: linear-gradient(145deg, #00D4FF, #00AEEF);
+                color: #0b0f13; border: none; border-radius: 12px; transition: all 0.2s; opacity: 0.5;
             `;
-            generateButton.onmouseover = () => { if (!generateButton.disabled) generateButton.style.background = 'linear-gradient(145deg, #4cae4c, #449d44)'; };
-            generateButton.onmouseout = () => { if (!generateButton.disabled) generateButton.style.background = 'linear-gradient(145deg, #5cb85c, #4cae4c)'; };
+            generateButton.onmouseover = () => { if (!generateButton.disabled) generateButton.style.background = 'linear-gradient(145deg, #00AEEF, #007EA7)'; };
+            generateButton.onmouseout = () => { if (!generateButton.disabled) generateButton.style.background = 'linear-gradient(145deg, #00D4FF, #00AEEF)'; };
             generateButton.onclick = () => {
                 if (selectedMode && selectedScanMode) {
                     resolve({ mode: selectedMode, delay: scrapeDelay, scanMode: selectedScanMode, bestConstThreshold, newConstThreshold });
@@ -1053,8 +1065,8 @@
         const secondLineY = canvas.height - PADDING + 10;
         const firstLineY = secondLineY - lineHeight;
 
-        ctx.fillText('非公式ジェネレーターによって生成されました', footerX, firstLineY);
-        ctx.fillText('https://chunithm.fun', footerX, secondLineY);
+        ctx.fillText('', footerX, firstLineY);
+        ctx.fillText('', footerX, secondLineY);
 
         // --- 結果表示 ---
         updateMessage("画像を生成中...");
