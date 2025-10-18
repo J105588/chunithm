@@ -43342,5 +43342,145 @@
         "const": 15.4,
         "diff": "MAS",
         "version": "X-VERSE"
+    },
+    {
+        "title": "はじまりの未来",
+        "artist": "40mP × sasakure.UK / 初音ミク「劇場版プロジェクトセカイ　壊れたセカイと歌えないミク」",
+        "const": 2.0,
+        "diff": "BAS",
+        "version": "X-VERSE"
+    },
+    {
+        "title": "はじまりの未来",
+        "artist": "40mP × sasakure.UK / 初音ミク「劇場版プロジェクトセカイ　壊れたセカイと歌えないミク」",
+        "const": 5.0,
+        "diff": "ADV",
+        "version": "X-VERSE"
+    },
+    {
+        "title": "はじまりの未来",
+        "artist": "40mP × sasakure.UK / 初音ミク「劇場版プロジェクトセカイ　壊れたセカイと歌えないミク」",
+        "const": 9.0,
+        "diff": "EXP",
+        "version": "X-VERSE"
+    },
+    {
+        "title": "はじまりの未来",
+        "artist": "40mP × sasakure.UK / 初音ミク「劇場版プロジェクトセカイ　壊れたセカイと歌えないミク」",
+        "const": 12.9,
+        "diff": "MAS",
+        "version": "X-VERSE"
+    },
+    {
+        "title": "Worlders",
+        "artist": "じん / バーチャル・シンガー、Leo/need、MORE MORE JUMP！、Vivid BAD SQUAD、ワンダーランズ×ショウタイム、25時、ナイトコードで。「劇場版プロジェクトセカイ　壊れたセカイと歌えないミク」",
+        "const": 2.0,
+        "diff": "BAS",
+        "version": "X-VERSE"
+    },
+    {
+        "title": "Worlders",
+        "artist": "じん / バーチャル・シンガー、Leo/need、MORE MORE JUMP！、Vivid BAD SQUAD、ワンダーランズ×ショウタイム、25時、ナイトコードで。「劇場版プロジェクトセカイ　壊れたセカイと歌えないミク」",
+        "const": 5.0,
+        "diff": "ADV",
+        "version": "X-VERSE"
+    },
+    {
+        "title": "Worlders",
+        "artist": "じん / バーチャル・シンガー、Leo/need、MORE MORE JUMP！、Vivid BAD SQUAD、ワンダーランズ×ショウタイム、25時、ナイトコードで。「劇場版プロジェクトセカイ　壊れたセカイと歌えないミク」",
+        "const": 9.0,
+        "diff": "EXP",
+        "version": "X-VERSE"
+    },
+    {
+        "title": "Worlders",
+        "artist": "じん / バーチャル・シンガー、Leo/need、MORE MORE JUMP！、Vivid BAD SQUAD、ワンダーランズ×ショウタイム、25時、ナイトコードで。「劇場版プロジェクトセカイ　壊れたセカイと歌えないミク」",
+        "const": 12.8,
+        "diff": "MAS",
+        "version": "X-VERSE"
+    },
+    {
+        "title": "Idoratrize World",
+        "artist": "A-One",
+        "const": 3.0,
+        "diff": "BAS",
+        "version": "X-VERSE"
+    },
+    {
+        "title": "Idoratrize World",
+        "artist": "A-One",
+        "const": 6.0,
+        "diff": "ADV",
+        "version": "X-VERSE"
+    },
+    {
+        "title": "Idoratrize World",
+        "artist": "A-One",
+        "const": 10.4,
+        "diff": "EXP",
+        "version": "X-VERSE"
+    },
+    {
+        "title": "Idoratrize World",
+        "artist": "A-One",
+        "const": 14.1,
+        "diff": "MAS",
+        "version": "X-VERSE"
+    },
+    {
+        "title": "Necromantic",
+        "artist": "暁Records",
+        "const": 3.0,
+        "diff": "BAS",
+        "version": "X-VERSE"
+    },
+    {
+        "title": "Necromantic",
+        "artist": "暁Records",
+        "const": 5.0,
+        "diff": "ADV",
+        "version": "X-VERSE"
+    },
+    {
+        "title": "Necromantic",
+        "artist": "暁Records",
+        "const": 9.5,
+        "diff": "EXP",
+        "version": "X-VERSE"
+    },
+    {
+        "title": "Necromantic",
+        "artist": "暁Records",
+        "const": 13.0,
+        "diff": "MAS",
+        "version": "X-VERSE"
+    },
+    {
+        "title": "Galaxy Collapse",
+        "artist": "黒皇帝",
+        "const": 4.0,
+        "diff": "BAS",
+        "version": "X-VERSE"
+    },
+    {
+        "title": "Galaxy Collapse",
+        "artist": "黒皇帝",
+        "const": 9.5,
+        "diff": "ADV",
+        "version": "X-VERSE"
+    },
+    {
+        "title": "Galaxy Collapse",
+        "artist": "黒皇帝",
+        "const": 13.8,
+        "diff": "EXP",
+        "version": "X-VERSE"
+    },
+    {
+        "title": "Galaxy Collapse",
+        "artist": "黒皇帝",
+        "const": 15.3,
+        "diff": "MAS",
+        "version": "X-VERSE"
     }
 ]

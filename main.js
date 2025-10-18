@@ -1053,8 +1053,8 @@
         const secondLineY = canvas.height - PADDING + 10;
         const firstLineY = secondLineY - lineHeight;
 
-        ctx.fillText('', footerX, firstLineY);
-        ctx.fillText('', footerX, secondLineY);
+        ctx.fillText('非公式ジェネレーターによって生成されました', footerX, firstLineY);
+        ctx.fillText('https://chunithm.fun', footerX, secondLineY);
 
         // --- 結果表示 ---
         updateMessage("画像を生成中...");
@@ -1264,5 +1264,4 @@
         }
         showError(error.message);
     }
-
 })();
