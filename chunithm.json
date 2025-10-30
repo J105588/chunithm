@@ -43482,5 +43482,33 @@
         "const": 15.3,
         "diff": "MAS",
         "version": "X-VERSE"
+    },
+    {
+        "title": "渦状銀河のシンフォニエッタ",
+        "artist": "山本真央樹",
+        "const": 4.0,
+        "diff": "BAS",
+        "version": "X-VERSE"
+    },
+    {
+        "title": "渦状銀河のシンフォニエッタ",
+        "artist": "山本真央樹",
+        "const": 7.0,
+        "diff": "ADV",
+        "version": "X-VERSE"
+    },
+    {
+        "title": "渦状銀河のシンフォニエッタ",
+        "artist": "山本真央樹",
+        "const": 12.5,
+        "diff": "EXP",
+        "version": "X-VERSE"
+    },
+    {
+        "title": "渦状銀河のシンフォニエッタ",
+        "artist": "山本真央樹",
+        "const": 15.0,
+        "diff": "MAS",
+        "version": "X-VERSE"
     }
 ]
