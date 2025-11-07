@@ -43510,5 +43510,145 @@
         "const": 15.0,
         "diff": "MAS",
         "version": "X-VERSE"
+    },
+    {
+        "title": "Hardsync",
+        "artist": "桔梗 小夜曲(CV:原田 彩楓)",
+        "const": 4.0,
+        "diff": "BAS",
+        "version": "X-VERSE"
+    },
+    {
+        "title": "Hardsync",
+        "artist": "桔梗 小夜曲(CV:原田 彩楓)",
+        "const": 7.0,
+        "diff": "ADV",
+        "version": "X-VERSE"
+    },
+    {
+        "title": "Hardsync",
+        "artist": "桔梗 小夜曲(CV:原田 彩楓)",
+        "const": 10.5,
+        "diff": "EXP",
+        "version": "X-VERSE"
+    },
+    {
+        "title": "Hardsync",
+        "artist": "桔梗 小夜曲(CV:原田 彩楓)",
+        "const": 14.5,
+        "diff": "MAS",
+        "version": "X-VERSE"
+    },
+    {
+        "title": "しとしとと",
+        "artist": "t+pazolite",
+        "const": 4.0,
+        "diff": "BAS",
+        "version": "X-VERSE"
+    },
+    {
+        "title": "しとしとと",
+        "artist": "t+pazolite",
+        "const": 9.5,
+        "diff": "ADV",
+        "version": "X-VERSE"
+    },
+    {
+        "title": "しとしとと",
+        "artist": "t+pazolite",
+        "const": 13.0,
+        "diff": "EXP",
+        "version": "X-VERSE"
+    },
+    {
+        "title": "しとしとと",
+        "artist": "t+pazolite",
+        "const": 14.5,
+        "diff": "MAS",
+        "version": "X-VERSE"
+    },
+    {
+        "title": "Warp Speed",
+        "artist": "Nhato",
+        "const": 3.0,
+        "diff": "BAS",
+        "version": "X-VERSE"
+    },
+    {
+        "title": "Warp Speed",
+        "artist": "Nhato",
+        "const": 7.0,
+        "diff": "ADV",
+        "version": "X-VERSE"
+    },
+    {
+        "title": "Warp Speed",
+        "artist": "Nhato",
+        "const": 11.5,
+        "diff": "EXP",
+        "version": "X-VERSE"
+    },
+    {
+        "title": "Warp Speed",
+        "artist": "Nhato",
+        "const": 14.0,
+        "diff": "MAS",
+        "version": "X-VERSE"
+    },
+    {
+        "title": "In the Straying Story",
+        "artist": "polysha",
+        "const": 3.0,
+        "diff": "BAS",
+        "version": "X-VERSE"
+    },
+    {
+        "title": "In the Straying Story",
+        "artist": "polysha",
+        "const": 7.0,
+        "diff": "ADV",
+        "version": "X-VERSE"
+    },
+    {
+        "title": "In the Straying Story",
+        "artist": "polysha",
+        "const": 13.0,
+        "diff": "EXP",
+        "version": "X-VERSE"
+    },
+    {
+        "title": "In the Straying Story",
+        "artist": "polysha",
+        "const": 14.5,
+        "diff": "MAS",
+        "version": "X-VERSE"
+    },
+    {
+        "title": "PhenomenoN",
+        "artist": "Laur feat.Tia",
+        "const": 3.0,
+        "diff": "BAS",
+        "version": "X-VERSE"
+    },
+    {
+        "title": "PhenomenoN",
+        "artist": "Laur feat.Tia",
+        "const": 6.0,
+        "diff": "ADV",
+        "version": "X-VERSE"
+    },
+    {
+        "title": "PhenomenoN",
+        "artist": "Laur feat.Tia",
+        "const": 11.0,
+        "diff": "EXP",
+        "version": "X-VERSE"
+    },
+    {
+        "title": "PhenomenoN",
+        "artist": "Laur feat.Tia",
+        "const": 14.5,
+        "diff": "MAS",
+        "version": "X-VERSE"
     }
 ]
