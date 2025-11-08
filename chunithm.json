@@ -43650,5 +43650,33 @@
         "const": 14.5,
         "diff": "MAS",
         "version": "X-VERSE"
+    },
+    {
+        "title": "輪廻玲々",
+        "artist": "suzu",
+        "const": 6.0,
+        "diff": "BAS",
+        "version": "X-VERSE"
+    },
+    {
+        "title": "輪廻玲々",
+        "artist": "suzu",
+        "const": 11.0,
+        "diff": "ADV",
+        "version": "X-VERSE"
+    },
+    {
+        "title": "輪廻玲々",
+        "artist": "suzu",
+        "const": 14.3,
+        "diff": "EXP",
+        "version": "X-VERSE"
+    },
+    {
+        "title": "輪廻玲々",
+        "artist": "suzu",
+        "const": 15.4,
+        "diff": "MAS",
+        "version": "X-VERSE"
     }
 ]
