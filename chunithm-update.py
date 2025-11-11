@@ -3,7 +3,7 @@ import requests
 import pathlib
 
 # スクリプト自身の場所を基準に、書き込むJSONファイルのフルパスを定義
-# これにより、GitHub Actionsの実行環境でも正しくファイルが配置される
+# これにより、GitHub Actionsの実行環境でも正しくファイルが配置される(?)
 SCRIPT_DIR = pathlib.Path(__file__).parent
 JSON_FILE_PATH = SCRIPT_DIR / 'chunithm.json'
 
@@ -41,7 +41,7 @@ def merge_and_update_chunithm_data():
         response_source = requests.get(source_url)
         response_source.raise_for_status()
         
-        # BOM付きUTF-8ファイルに対応するため、'utf-8-sig'を指定してデコード
+        # BOM付きUTF-8ファイルに対応する
         decoded_text = response_source.content.decode('utf-8-sig')
         source_data = json.loads(decoded_text)
 
@@ -109,3 +109,4 @@ def merge_and_update_chunithm_data():
 if __name__ == '__main__':
     merge_and_update_chunithm_data()
     print("\n処理が完了しました。")
+
