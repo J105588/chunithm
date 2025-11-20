@@ -43678,5 +43678,145 @@
         "const": 15.4,
         "diff": "MAS",
         "version": "X-VERSE"
+    },
+    {
+        "title": "最愛人生ランナー",
+        "artist": "かいりきベア",
+        "const": 3.0,
+        "diff": "BAS",
+        "version": "X-VERSE"
+    },
+    {
+        "title": "最愛人生ランナー",
+        "artist": "かいりきベア",
+        "const": 6.0,
+        "diff": "ADV",
+        "version": "X-VERSE"
+    },
+    {
+        "title": "最愛人生ランナー",
+        "artist": "かいりきベア",
+        "const": 10.0,
+        "diff": "EXP",
+        "version": "X-VERSE"
+    },
+    {
+        "title": "最愛人生ランナー",
+        "artist": "かいりきベア",
+        "const": 13.5,
+        "diff": "MAS",
+        "version": "X-VERSE"
+    },
+    {
+        "title": "ウィーアーピコピコハンマーズ!!!!",
+        "artist": "cosMo＠暴走P",
+        "const": 3.0,
+        "diff": "BAS",
+        "version": "X-VERSE"
+    },
+    {
+        "title": "ウィーアーピコピコハンマーズ!!!!",
+        "artist": "cosMo＠暴走P",
+        "const": 7.0,
+        "diff": "ADV",
+        "version": "X-VERSE"
+    },
+    {
+        "title": "ウィーアーピコピコハンマーズ!!!!",
+        "artist": "cosMo＠暴走P",
+        "const": 11.5,
+        "diff": "EXP",
+        "version": "X-VERSE"
+    },
+    {
+        "title": "ウィーアーピコピコハンマーズ!!!!",
+        "artist": "cosMo＠暴走P",
+        "const": 14.0,
+        "diff": "MAS",
+        "version": "X-VERSE"
+    },
+    {
+        "title": "ジェットブラック",
+        "artist": "雄之助",
+        "const": 3.0,
+        "diff": "BAS",
+        "version": "X-VERSE"
+    },
+    {
+        "title": "ジェットブラック",
+        "artist": "雄之助",
+        "const": 5.0,
+        "diff": "ADV",
+        "version": "X-VERSE"
+    },
+    {
+        "title": "ジェットブラック",
+        "artist": "雄之助",
+        "const": 10.0,
+        "diff": "EXP",
+        "version": "X-VERSE"
+    },
+    {
+        "title": "ジェットブラック",
+        "artist": "雄之助",
+        "const": 13.0,
+        "diff": "MAS",
+        "version": "X-VERSE"
+    },
+    {
+        "title": "トレジャーガーデン",
+        "artist": "Ponchi♪ feat.初音ミク",
+        "const": 3.0,
+        "diff": "BAS",
+        "version": "X-VERSE"
+    },
+    {
+        "title": "トレジャーガーデン",
+        "artist": "Ponchi♪ feat.初音ミク",
+        "const": 6.0,
+        "diff": "ADV",
+        "version": "X-VERSE"
+    },
+    {
+        "title": "トレジャーガーデン",
+        "artist": "Ponchi♪ feat.初音ミク",
+        "const": 10.5,
+        "diff": "EXP",
+        "version": "X-VERSE"
+    },
+    {
+        "title": "トレジャーガーデン",
+        "artist": "Ponchi♪ feat.初音ミク",
+        "const": 14.0,
+        "diff": "MAS",
+        "version": "X-VERSE"
+    },
+    {
+        "title": "電光刹歌",
+        "artist": "かめりあ",
+        "const": 3.0,
+        "diff": "BAS",
+        "version": "X-VERSE"
+    },
+    {
+        "title": "電光刹歌",
+        "artist": "かめりあ",
+        "const": 6.0,
+        "diff": "ADV",
+        "version": "X-VERSE"
+    },
+    {
+        "title": "電光刹歌",
+        "artist": "かめりあ",
+        "const": 11.5,
+        "diff": "EXP",
+        "version": "X-VERSE"
+    },
+    {
+        "title": "電光刹歌",
+        "artist": "かめりあ",
+        "const": 14.0,
+        "diff": "MAS",
+        "version": "X-VERSE"
     }
 ]
