@@ -43818,5 +43818,117 @@
         "const": 14.0,
         "diff": "MAS",
         "version": "X-VERSE"
+    },
+    {
+        "title": "Kaleidoscope",
+        "artist": "Lycoris in the parterre",
+        "const": 3.0,
+        "diff": "BAS",
+        "version": "X-VERSE"
+    },
+    {
+        "title": "Kaleidoscope",
+        "artist": "Lycoris in the parterre",
+        "const": 7.0,
+        "diff": "ADV",
+        "version": "X-VERSE"
+    },
+    {
+        "title": "Kaleidoscope",
+        "artist": "Lycoris in the parterre",
+        "const": 13.5,
+        "diff": "EXP",
+        "version": "X-VERSE"
+    },
+    {
+        "title": "Kaleidoscope",
+        "artist": "Lycoris in the parterre",
+        "const": 15.0,
+        "diff": "MAS",
+        "version": "X-VERSE"
+    },
+    {
+        "title": "hyperreality",
+        "artist": "tn-shi",
+        "const": 5.0,
+        "diff": "BAS",
+        "version": "X-VERSE"
+    },
+    {
+        "title": "hyperreality",
+        "artist": "tn-shi",
+        "const": 8.0,
+        "diff": "ADV",
+        "version": "X-VERSE"
+    },
+    {
+        "title": "hyperreality",
+        "artist": "tn-shi",
+        "const": 13.5,
+        "diff": "EXP",
+        "version": "X-VERSE"
+    },
+    {
+        "title": "hyperreality",
+        "artist": "tn-shi",
+        "const": 15.0,
+        "diff": "MAS",
+        "version": "X-VERSE"
+    },
+    {
+        "title": "Deep Blue",
+        "artist": "technoplanet feat. Tamako Kinoshita",
+        "const": 6.0,
+        "diff": "BAS",
+        "version": "X-VERSE"
+    },
+    {
+        "title": "Deep Blue",
+        "artist": "technoplanet feat. Tamako Kinoshita",
+        "const": 11.0,
+        "diff": "ADV",
+        "version": "X-VERSE"
+    },
+    {
+        "title": "Deep Blue",
+        "artist": "technoplanet feat. Tamako Kinoshita",
+        "const": 14.5,
+        "diff": "EXP",
+        "version": "X-VERSE"
+    },
+    {
+        "title": "Deep Blue",
+        "artist": "technoplanet feat. Tamako Kinoshita",
+        "const": 15.5,
+        "diff": "MAS",
+        "version": "X-VERSE"
+    },
+    {
+        "title": "DEvourER",
+        "artist": "ZxNX + Redsign",
+        "const": 4.0,
+        "diff": "BAS",
+        "version": "X-VERSE"
+    },
+    {
+        "title": "DEvourER",
+        "artist": "ZxNX + Redsign",
+        "const": 7.0,
+        "diff": "ADV",
+        "version": "X-VERSE"
+    },
+    {
+        "title": "DEvourER",
+        "artist": "ZxNX + Redsign",
+        "const": 12.5,
+        "diff": "EXP",
+        "version": "X-VERSE"
+    },
+    {
+        "title": "DEvourER",
+        "artist": "ZxNX + Redsign",
+        "const": 14.5,
+        "diff": "MAS",
+        "version": "X-VERSE"
     }
 ]
