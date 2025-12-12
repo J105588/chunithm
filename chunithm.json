@@ -43958,5 +43958,698 @@
         "const": 15.7,
         "diff": "MAS",
         "version": "X-VERSE"
+    },
+    {
+        "title": "BOW AND ARROW （アニメ・オープニングver.）",
+        "artist": "米津玄師",
+        "const": 3.0,
+        "diff": "BAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "BOW AND ARROW （アニメ・オープニングver.）",
+        "artist": "米津玄師",
+        "const": 5.0,
+        "diff": "ADV",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "BOW AND ARROW （アニメ・オープニングver.）",
+        "artist": "米津玄師",
+        "const": 9.5,
+        "diff": "EXP",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "BOW AND ARROW （アニメ・オープニングver.）",
+        "artist": "米津玄師",
+        "const": 13.0,
+        "diff": "MAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "BOW AND ARROW （アニメ・オープニングver.）",
+        "artist": "米津玄師",
+        "const": 14.0,
+        "diff": "ULT",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "Ave Mujica",
+        "artist": "Ave Mujica",
+        "const": 3.0,
+        "diff": "BAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "Ave Mujica",
+        "artist": "Ave Mujica",
+        "const": 6.0,
+        "diff": "ADV",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "Ave Mujica",
+        "artist": "Ave Mujica",
+        "const": 9.5,
+        "diff": "EXP",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "Ave Mujica",
+        "artist": "Ave Mujica",
+        "const": 14.0,
+        "diff": "MAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "KiLLKiSS",
+        "artist": "Ave Mujica",
+        "const": 3.0,
+        "diff": "BAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "KiLLKiSS",
+        "artist": "Ave Mujica",
+        "const": 6.0,
+        "diff": "ADV",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "KiLLKiSS",
+        "artist": "Ave Mujica",
+        "const": 10.5,
+        "diff": "EXP",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "KiLLKiSS",
+        "artist": "Ave Mujica",
+        "const": 14.0,
+        "diff": "MAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "怪獣",
+        "artist": "サカナクション",
+        "const": 3.0,
+        "diff": "BAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "怪獣",
+        "artist": "サカナクション",
+        "const": 5.0,
+        "diff": "ADV",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "怪獣",
+        "artist": "サカナクション",
+        "const": 9.0,
+        "diff": "EXP",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "怪獣",
+        "artist": "サカナクション",
+        "const": 12.5,
+        "diff": "MAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "一旦ステイ TONIGHT",
+        "artist": "不破湊",
+        "const": 3.0,
+        "diff": "BAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "一旦ステイ TONIGHT",
+        "artist": "不破湊",
+        "const": 6.0,
+        "diff": "ADV",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "一旦ステイ TONIGHT",
+        "artist": "不破湊",
+        "const": 10.0,
+        "diff": "EXP",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "一旦ステイ TONIGHT",
+        "artist": "不破湊",
+        "const": 13.5,
+        "diff": "MAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "モニタリング",
+        "artist": "DECO*27",
+        "const": 3.0,
+        "diff": "BAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "モニタリング",
+        "artist": "DECO*27",
+        "const": 5.0,
+        "diff": "ADV",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "モニタリング",
+        "artist": "DECO*27",
+        "const": 10.0,
+        "diff": "EXP",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "モニタリング",
+        "artist": "DECO*27",
+        "const": 13.0,
+        "diff": "MAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "化けの花",
+        "artist": "なきそ",
+        "const": 3.0,
+        "diff": "BAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "化けの花",
+        "artist": "なきそ",
+        "const": 6.0,
+        "diff": "ADV",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "化けの花",
+        "artist": "なきそ",
+        "const": 10.5,
+        "diff": "EXP",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "化けの花",
+        "artist": "なきそ",
+        "const": 13.5,
+        "diff": "MAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "化けの花",
+        "artist": "なきそ",
+        "const": 14.5,
+        "diff": "ULT",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "キャンディークッキーチョコレート",
+        "artist": "はろける",
+        "const": 3.0,
+        "diff": "BAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "キャンディークッキーチョコレート",
+        "artist": "はろける",
+        "const": 6.0,
+        "diff": "ADV",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "キャンディークッキーチョコレート",
+        "artist": "はろける",
+        "const": 9.0,
+        "diff": "EXP",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "キャンディークッキーチョコレート",
+        "artist": "はろける",
+        "const": 13.0,
+        "diff": "MAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "キャンディークッキーチョコレート",
+        "artist": "はろける",
+        "const": 14.5,
+        "diff": "ULT",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "Ultimate taste",
+        "artist": "ぱらどっと",
+        "const": 4.0,
+        "diff": "BAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "Ultimate taste",
+        "artist": "ぱらどっと",
+        "const": 7.5,
+        "diff": "ADV",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "Ultimate taste",
+        "artist": "ぱらどっと",
+        "const": 12.5,
+        "diff": "EXP",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "Ultimate taste",
+        "artist": "ぱらどっと",
+        "const": 14.5,
+        "diff": "MAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "AiAe",
+        "artist": "DJ'TEKINA//SOMETHING a.k.a ゆよゆっぺ",
+        "const": 3.0,
+        "diff": "BAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "AiAe",
+        "artist": "DJ'TEKINA//SOMETHING a.k.a ゆよゆっぺ",
+        "const": 6.0,
+        "diff": "ADV",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "AiAe",
+        "artist": "DJ'TEKINA//SOMETHING a.k.a ゆよゆっぺ",
+        "const": 13.0,
+        "diff": "EXP",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "AiAe",
+        "artist": "DJ'TEKINA//SOMETHING a.k.a ゆよゆっぺ",
+        "const": 15.0,
+        "diff": "MAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "ビッグブリッヂの死闘 -シアトリズムFFAC Arrange- from FFV",
+        "artist": "SQUARE ENIX",
+        "const": 4.0,
+        "diff": "BAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "ビッグブリッヂの死闘 -シアトリズムFFAC Arrange- from FFV",
+        "artist": "SQUARE ENIX",
+        "const": 8.0,
+        "diff": "ADV",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "ビッグブリッヂの死闘 -シアトリズムFFAC Arrange- from FFV",
+        "artist": "SQUARE ENIX",
+        "const": 13.5,
+        "diff": "EXP",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "ビッグブリッヂの死闘 -シアトリズムFFAC Arrange- from FFV",
+        "artist": "SQUARE ENIX",
+        "const": 15.0,
+        "diff": "MAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "MORNINGLOOM",
+        "artist": "saaa",
+        "const": 3.0,
+        "diff": "BAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "MORNINGLOOM",
+        "artist": "saaa",
+        "const": 6.0,
+        "diff": "ADV",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "MORNINGLOOM",
+        "artist": "saaa",
+        "const": 11.0,
+        "diff": "EXP",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "MORNINGLOOM",
+        "artist": "saaa",
+        "const": 14.5,
+        "diff": "MAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "Angelic Layer",
+        "artist": "SHIKI",
+        "const": 2.0,
+        "diff": "BAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "Angelic Layer",
+        "artist": "SHIKI",
+        "const": 6.0,
+        "diff": "ADV",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "Angelic Layer",
+        "artist": "SHIKI",
+        "const": 10.5,
+        "diff": "EXP",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "Angelic Layer",
+        "artist": "SHIKI",
+        "const": 14.5,
+        "diff": "MAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "当たり前田の小野美苗",
+        "artist": "小野 美苗(CV:伊藤 美来)",
+        "const": 4.0,
+        "diff": "BAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "当たり前田の小野美苗",
+        "artist": "小野 美苗(CV:伊藤 美来)",
+        "const": 7.0,
+        "diff": "ADV",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "当たり前田の小野美苗",
+        "artist": "小野 美苗(CV:伊藤 美来)",
+        "const": 10.5,
+        "diff": "EXP",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "当たり前田の小野美苗",
+        "artist": "小野 美苗(CV:伊藤 美来)",
+        "const": 14.5,
+        "diff": "MAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "BIRTH",
+        "artist": "llliiillliiilll",
+        "const": 3.0,
+        "diff": "BAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "BIRTH",
+        "artist": "llliiillliiilll",
+        "const": 7.0,
+        "diff": "ADV",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "BIRTH",
+        "artist": "llliiillliiilll",
+        "const": 13.0,
+        "diff": "EXP",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "BIRTH",
+        "artist": "llliiillliiilll",
+        "const": 14.5,
+        "diff": "MAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "WakeUP MakeUP FEVER!",
+        "artist": "曲：アオワイファイ／歌：オンゲキシューターズ",
+        "const": 2.0,
+        "diff": "BAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "WakeUP MakeUP FEVER!",
+        "artist": "曲：アオワイファイ／歌：オンゲキシューターズ",
+        "const": 5.0,
+        "diff": "ADV",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "WakeUP MakeUP FEVER!",
+        "artist": "曲：アオワイファイ／歌：オンゲキシューターズ",
+        "const": 10.0,
+        "diff": "EXP",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "WakeUP MakeUP FEVER!",
+        "artist": "曲：アオワイファイ／歌：オンゲキシューターズ",
+        "const": 12.5,
+        "diff": "MAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "Starlight★Limited",
+        "artist": "カタオカツグミ",
+        "const": 3.0,
+        "diff": "BAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "Starlight★Limited",
+        "artist": "カタオカツグミ",
+        "const": 7.0,
+        "diff": "ADV",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "Starlight★Limited",
+        "artist": "カタオカツグミ",
+        "const": 12.0,
+        "diff": "EXP",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "Starlight★Limited",
+        "artist": "カタオカツグミ",
+        "const": 14.0,
+        "diff": "MAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "魔法に照らされたアンコール",
+        "artist": "MIMI feat.wawa",
+        "const": 2.0,
+        "diff": "BAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "魔法に照らされたアンコール",
+        "artist": "MIMI feat.wawa",
+        "const": 5.0,
+        "diff": "ADV",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "魔法に照らされたアンコール",
+        "artist": "MIMI feat.wawa",
+        "const": 10.5,
+        "diff": "EXP",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "魔法に照らされたアンコール",
+        "artist": "MIMI feat.wawa",
+        "const": 13.0,
+        "diff": "MAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "ジナ",
+        "artist": "niki feat.DELUTAYA",
+        "const": 3.0,
+        "diff": "BAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "ジナ",
+        "artist": "niki feat.DELUTAYA",
+        "const": 6.0,
+        "diff": "ADV",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "ジナ",
+        "artist": "niki feat.DELUTAYA",
+        "const": 11.0,
+        "diff": "EXP",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "ジナ",
+        "artist": "niki feat.DELUTAYA",
+        "const": 13.5,
+        "diff": "MAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "Road to Aventura",
+        "artist": "s-don",
+        "const": 3.0,
+        "diff": "BAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "Road to Aventura",
+        "artist": "s-don",
+        "const": 6.0,
+        "diff": "ADV",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "Road to Aventura",
+        "artist": "s-don",
+        "const": 12.5,
+        "diff": "EXP",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "Road to Aventura",
+        "artist": "s-don",
+        "const": 14.5,
+        "diff": "MAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "☆をつなぐシュトラール",
+        "artist": "ああああ",
+        "const": 4.0,
+        "diff": "BAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "☆をつなぐシュトラール",
+        "artist": "ああああ",
+        "const": 7.0,
+        "diff": "ADV",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "☆をつなぐシュトラール",
+        "artist": "ああああ",
+        "const": 11.5,
+        "diff": "EXP",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "☆をつなぐシュトラール",
+        "artist": "ああああ",
+        "const": 14.0,
+        "diff": "MAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "MOMOCO68000",
+        "artist": "AKIRA YAMAOKA",
+        "const": 3.0,
+        "diff": "BAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "MOMOCO68000",
+        "artist": "AKIRA YAMAOKA",
+        "const": 7.5,
+        "diff": "ADV",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "MOMOCO68000",
+        "artist": "AKIRA YAMAOKA",
+        "const": 12.0,
+        "diff": "EXP",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "MOMOCO68000",
+        "artist": "AKIRA YAMAOKA",
+        "const": 14.0,
+        "diff": "MAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "〚回帰〛 ～Scherzo ~フォルトゥーナの悪戯~",
+        "artist": "MIssinoary & DCWH",
+        "const": 4.0,
+        "diff": "BAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "〚回帰〛 ～Scherzo ~フォルトゥーナの悪戯~",
+        "artist": "MIssinoary & DCWH",
+        "const": 8.5,
+        "diff": "ADV",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "〚回帰〛 ～Scherzo ~フォルトゥーナの悪戯~",
+        "artist": "MIssinoary & DCWH",
+        "const": 13.5,
+        "diff": "EXP",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "〚回帰〛 ～Scherzo ~フォルトゥーナの悪戯~",
+        "artist": "MIssinoary & DCWH",
+        "const": 15.0,
+        "diff": "MAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "tHE uNcontRollaBle ciNdeRella",
+        "artist": "Felysrator (feat. Lamanya)",
+        "const": 4.0,
+        "diff": "BAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "tHE uNcontRollaBle ciNdeRella",
+        "artist": "Felysrator (feat. Lamanya)",
+        "const": 8.5,
+        "diff": "ADV",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "tHE uNcontRollaBle ciNdeRella",
+        "artist": "Felysrator (feat. Lamanya)",
+        "const": 13.0,
+        "diff": "EXP",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "tHE uNcontRollaBle ciNdeRella",
+        "artist": "Felysrator (feat. Lamanya)",
+        "const": 14.5,
+        "diff": "MAS",
+        "version": "X-VERSE-X"
     }
 ]
