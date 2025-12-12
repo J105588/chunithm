@@ -44651,5 +44651,19 @@
         "const": 14.5,
         "diff": "MAS",
         "version": "X-VERSE-X"
+    },
+    {
+        "title": "轆轤首",
+        "artist": "かねこちはる",
+        "const": 13.9,
+        "diff": "EXP",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "轆轤首",
+        "artist": "かねこちはる",
+        "const": 15.4,
+        "diff": "MAS",
+        "version": "X-VERSE-X"
     }
 ]
