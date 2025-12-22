@@ -44707,5 +44707,33 @@
         "const": 14.3,
         "diff": "MAS",
         "version": "X-VERSE-X"
+    },
+    {
+        "title": "アイドゥーミー！",
+        "artist": "蓮ノ空女学院スクールアイドルクラブ「Link! Like! ラブライブ!」",
+        "const": 9.5,
+        "diff": "EXP",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "アイドゥーミー！",
+        "artist": "蓮ノ空女学院スクールアイドルクラブ「Link! Like! ラブライブ!」",
+        "const": 13.6,
+        "diff": "MAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "Edelied",
+        "artist": "Edel Note[セラス 柳田 リリエンフェルト(CV.三宅美羽)、桂城 泉(CV.進藤あまね)]「Link！Like！ラブライブ！」",
+        "const": 9,
+        "diff": "EXP",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "Edelied",
+        "artist": "Edel Note[セラス 柳田 リリエンフェルト(CV.三宅美羽)、桂城 泉(CV.進藤あまね)]「Link！Like！ラブライブ！」",
+        "const": 13.5,
+        "diff": "MAS",
+        "version": "X-VERSE-X"
     }
 ]
