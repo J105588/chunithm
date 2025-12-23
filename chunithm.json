@@ -44735,5 +44735,75 @@
         "const": 13.5,
         "diff": "MAS",
         "version": "X-VERSE-X"
+    },
+    {
+        "title": "アイドゥーミー！",
+        "artist": "蓮ノ空女学院スクールアイドルクラブ「Link! Like! ラブライブ!」",
+        "const": 3.0,
+        "diff": "BAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "アイドゥーミー！",
+        "artist": "蓮ノ空女学院スクールアイドルクラブ「Link! Like! ラブライブ!」",
+        "const": 5.0,
+        "diff": "ADV",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "Edelied",
+        "artist": "Edel Note[セラス 柳田 リリエンフェルト(CV.三宅美羽)、桂城 泉(CV.進藤あまね)]「Link！Like！ラブライブ！」",
+        "const": 3.0,
+        "diff": "BAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "Edelied",
+        "artist": "Edel Note[セラス 柳田 リリエンフェルト(CV.三宅美羽)、桂城 泉(CV.進藤あまね)]「Link！Like！ラブライブ！」",
+        "const": 6.0,
+        "diff": "ADV",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "㋰責任集合体",
+        "artist": "マサラダ",
+        "const": 2.0,
+        "diff": "BAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "㋰責任集合体",
+        "artist": "マサラダ",
+        "const": 5.0,
+        "diff": "ADV",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "バカ通信",
+        "artist": "isonosuke",
+        "const": 4.0,
+        "diff": "BAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "バカ通信",
+        "artist": "isonosuke",
+        "const": 7.5,
+        "diff": "ADV",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "ヤババイナ",
+        "artist": "さたぱんP",
+        "const": 4.0,
+        "diff": "BAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "ヤババイナ",
+        "artist": "さたぱんP",
+        "const": 7.0,
+        "diff": "ADV",
+        "version": "X-VERSE-X"
     }
 ]
