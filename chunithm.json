@@ -44805,5 +44805,145 @@
         "const": 7.0,
         "diff": "ADV",
         "version": "X-VERSE-X"
+    },
+    {
+        "title": "A-Yah-YAh-YaH-YAH!",
+        "artist": "凋叶棕 feat. めらみぽっぷ",
+        "const": 3.0,
+        "diff": "BAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "A-Yah-YAh-YaH-YAH!",
+        "artist": "凋叶棕 feat. めらみぽっぷ",
+        "const": 6.0,
+        "diff": "ADV",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "A-Yah-YAh-YaH-YAH!",
+        "artist": "凋叶棕 feat. めらみぽっぷ",
+        "const": 9.5,
+        "diff": "EXP",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "A-Yah-YAh-YaH-YAH!",
+        "artist": "凋叶棕 feat. めらみぽっぷ",
+        "const": 13.5,
+        "diff": "MAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "アマノジャクリバース feat. ｙｔｒ",
+        "artist": "魂音泉",
+        "const": 3.0,
+        "diff": "BAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "アマノジャクリバース feat. ｙｔｒ",
+        "artist": "魂音泉",
+        "const": 6.0,
+        "diff": "ADV",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "アマノジャクリバース feat. ｙｔｒ",
+        "artist": "魂音泉",
+        "const": 10.5,
+        "diff": "EXP",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "アマノジャクリバース feat. ｙｔｒ",
+        "artist": "魂音泉",
+        "const": 13.5,
+        "diff": "MAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "The Music of Violent Eating",
+        "artist": "Jerico",
+        "const": 5.0,
+        "diff": "BAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "The Music of Violent Eating",
+        "artist": "Jerico",
+        "const": 8.0,
+        "diff": "ADV",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "The Music of Violent Eating",
+        "artist": "Jerico",
+        "const": 13.0,
+        "diff": "EXP",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "The Music of Violent Eating",
+        "artist": "Jerico",
+        "const": 15.0,
+        "diff": "MAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "New World",
+        "artist": "FELT",
+        "const": 3.0,
+        "diff": "BAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "New World",
+        "artist": "FELT",
+        "const": 6.0,
+        "diff": "ADV",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "New World",
+        "artist": "FELT",
+        "const": 10.5,
+        "diff": "EXP",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "New World",
+        "artist": "FELT",
+        "const": 13.0,
+        "diff": "MAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "メイドノココロハアヤツリドール",
+        "artist": "森羅万象",
+        "const": 2.0,
+        "diff": "BAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "メイドノココロハアヤツリドール",
+        "artist": "森羅万象",
+        "const": 5.0,
+        "diff": "ADV",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "メイドノココロハアヤツリドール",
+        "artist": "森羅万象",
+        "const": 9.5,
+        "diff": "EXP",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "メイドノココロハアヤツリドール",
+        "artist": "森羅万象",
+        "const": 12.5,
+        "diff": "MAS",
+        "version": "X-VERSE-X"
     }
 ]
