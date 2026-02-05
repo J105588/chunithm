@@ -45071,5 +45071,117 @@
         "const": 9.0,
         "diff": "ADV",
         "version": "X-VERSE-X"
+    },
+    {
+        "title": "ソレイユ",
+        "artist": "芒崎 奏(CV:立花 理香)",
+        "const": 3.0,
+        "diff": "BAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "ソレイユ",
+        "artist": "芒崎 奏(CV:立花 理香)",
+        "const": 6.0,
+        "diff": "ADV",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "ソレイユ",
+        "artist": "芒崎 奏(CV:立花 理香)",
+        "const": 12.0,
+        "diff": "EXP",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "ソレイユ",
+        "artist": "芒崎 奏(CV:立花 理香)",
+        "const": 14.0,
+        "diff": "MAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "天地のうた",
+        "artist": "駄菓子O型 feat.みょみょ",
+        "const": 2.0,
+        "diff": "BAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "天地のうた",
+        "artist": "駄菓子O型 feat.みょみょ",
+        "const": 5.0,
+        "diff": "ADV",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "天地のうた",
+        "artist": "駄菓子O型 feat.みょみょ",
+        "const": 10.5,
+        "diff": "EXP",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "天地のうた",
+        "artist": "駄菓子O型 feat.みょみょ",
+        "const": 13.5,
+        "diff": "MAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "Aether Wind",
+        "artist": "OSTER project feat. 常盤ゆう",
+        "const": 3.0,
+        "diff": "BAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "Aether Wind",
+        "artist": "OSTER project feat. 常盤ゆう",
+        "const": 6.0,
+        "diff": "ADV",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "Aether Wind",
+        "artist": "OSTER project feat. 常盤ゆう",
+        "const": 10.0,
+        "diff": "EXP",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "Aether Wind",
+        "artist": "OSTER project feat. 常盤ゆう",
+        "const": 13.5,
+        "diff": "MAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "そして春めくモノローグ",
+        "artist": "Qutabire feat.柚子花",
+        "const": 3.0,
+        "diff": "BAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "そして春めくモノローグ",
+        "artist": "Qutabire feat.柚子花",
+        "const": 6.0,
+        "diff": "ADV",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "そして春めくモノローグ",
+        "artist": "Qutabire feat.柚子花",
+        "const": 10.0,
+        "diff": "EXP",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "そして春めくモノローグ",
+        "artist": "Qutabire feat.柚子花",
+        "const": 13.5,
+        "diff": "MAS",
+        "version": "X-VERSE-X"
     }
 ]
