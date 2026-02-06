@@ -45183,5 +45183,19 @@
         "const": 13.5,
         "diff": "MAS",
         "version": "X-VERSE-X"
+    },
+    {
+        "title": "Sweet & Sour",
+        "artist": "Sakuzyo or Sobrem",
+        "const": 14.0,
+        "diff": "EXP",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "Sweet & Sour",
+        "artist": "Sakuzyo or Sobrem",
+        "const": 15.6,
+        "diff": "MAS",
+        "version": "X-VERSE-X"
     }
 ]
