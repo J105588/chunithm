@@ -45211,5 +45211,152 @@
         "const": 10.0,
         "diff": "ADV",
         "version": "X-VERSE-X"
+    },
+    {
+        "title": "Campus mode!!",
+        "artist": "歌：初星学園 作詞作曲：田淵智也 編曲：滝澤俊輔（TRYTONELABO）「学園アイドルマスター」",
+        "const": 14.0,
+        "diff": "ULT",
+        "version": "VERSE"
+    },
+    {
+        "title": "もっと！",
+        "artist": "花鋏キョウ、獅子神レオナ、水瓶ミア、夢川かなう",
+        "const": 3.0,
+        "diff": "BAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "もっと！",
+        "artist": "花鋏キョウ、獅子神レオナ、水瓶ミア、夢川かなう",
+        "const": 5.0,
+        "diff": "ADV",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "もっと！",
+        "artist": "花鋏キョウ、獅子神レオナ、水瓶ミア、夢川かなう",
+        "const": 9.5,
+        "diff": "EXP",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "もっと！",
+        "artist": "花鋏キョウ、獅子神レオナ、水瓶ミア、夢川かなう",
+        "const": 13.0,
+        "diff": "MAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "はっぴーでいず！",
+        "artist": "獅子神レオナ",
+        "const": 2.0,
+        "diff": "BAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "はっぴーでいず！",
+        "artist": "獅子神レオナ",
+        "const": 6.0,
+        "diff": "ADV",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "はっぴーでいず！",
+        "artist": "獅子神レオナ",
+        "const": 9.5,
+        "diff": "EXP",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "はっぴーでいず！",
+        "artist": "獅子神レオナ",
+        "const": 13.0,
+        "diff": "MAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "Behavior",
+        "artist": "花鋏キョウ",
+        "const": 2.0,
+        "diff": "BAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "Behavior",
+        "artist": "花鋏キョウ",
+        "const": 5.0,
+        "diff": "ADV",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "Behavior",
+        "artist": "花鋏キョウ",
+        "const": 9.0,
+        "diff": "EXP",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "Behavior",
+        "artist": "花鋏キョウ",
+        "const": 12.5,
+        "diff": "MAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "M@GICAL☆CURE! LOVE ♥ SHOT!",
+        "artist": "SAWTOWNE",
+        "const": 3.0,
+        "diff": "BAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "M@GICAL☆CURE! LOVE ♥ SHOT!",
+        "artist": "SAWTOWNE",
+        "const": 6.0,
+        "diff": "ADV",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "M@GICAL☆CURE! LOVE ♥ SHOT!",
+        "artist": "SAWTOWNE",
+        "const": 10.0,
+        "diff": "EXP",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "M@GICAL☆CURE! LOVE ♥ SHOT!",
+        "artist": "SAWTOWNE",
+        "const": 13.0,
+        "diff": "MAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "LEMON MELON COOKIE",
+        "artist": "TAK",
+        "const": 3.0,
+        "diff": "BAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "LEMON MELON COOKIE",
+        "artist": "TAK",
+        "const": 6.0,
+        "diff": "ADV",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "LEMON MELON COOKIE",
+        "artist": "TAK",
+        "const": 10.0,
+        "diff": "EXP",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "LEMON MELON COOKIE",
+        "artist": "TAK",
+        "const": 12.5,
+        "diff": "MAS",
+        "version": "X-VERSE-X"
     }
 ]
