@@ -45554,5 +45554,89 @@
         "const": 15.5,
         "diff": "MAS",
         "version": "X-VERSE-X"
+    },
+    {
+        "title": "パステル・シタイ！",
+        "artist": "もちうつね feat.桃寝ちのい",
+        "const": 3,
+        "diff": "BAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "パステル・シタイ！",
+        "artist": "もちうつね feat.桃寝ちのい",
+        "const": 6,
+        "diff": "ADV",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "パステル・シタイ！",
+        "artist": "もちうつね feat.桃寝ちのい",
+        "const": 10,
+        "diff": "EXP",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "パステル・シタイ！",
+        "artist": "もちうつね feat.桃寝ちのい",
+        "const": 13.5,
+        "diff": "MAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "彩祭ワンダーワン！",
+        "artist": "Ponchi♪ feat.はぁち",
+        "const": 3,
+        "diff": "BAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "彩祭ワンダーワン！",
+        "artist": "Ponchi♪ feat.はぁち",
+        "const": 7,
+        "diff": "ADV",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "彩祭ワンダーワン！",
+        "artist": "Ponchi♪ feat.はぁち",
+        "const": 10,
+        "diff": "EXP",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "彩祭ワンダーワン！",
+        "artist": "Ponchi♪ feat.はぁち",
+        "const": 14,
+        "diff": "MAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "Fly Better!",
+        "artist": "ShiBa × U-Ruri",
+        "const": 3,
+        "diff": "BAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "Fly Better!",
+        "artist": "ShiBa × U-Ruri",
+        "const": 6,
+        "diff": "ADV",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "Fly Better!",
+        "artist": "ShiBa × U-Ruri",
+        "const": 9.5,
+        "diff": "EXP",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "Fly Better!",
+        "artist": "ShiBa × U-Ruri",
+        "const": 13.5,
+        "diff": "MAS",
+        "version": "X-VERSE-X"
     }
 ]
