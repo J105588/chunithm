@@ -45638,5 +45638,33 @@
         "const": 13.5,
         "diff": "MAS",
         "version": "X-VERSE-X"
+    },
+    {
+        "title": "Phantom Crisis",
+        "artist": "t+pazolite vs Yuta Imai",
+        "const": 6.0,
+        "diff": "BAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "Phantom Crisis",
+        "artist": "t+pazolite vs Yuta Imai",
+        "const": 11.9,
+        "diff": "ADV",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "Phantom Crisis",
+        "artist": "t+pazolite vs Yuta Imai",
+        "const": 14.1,
+        "diff": "EXP",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "Phantom Crisis",
+        "artist": "t+pazolite vs Yuta Imai",
+        "const": 15.5,
+        "diff": "MAS",
+        "version": "X-VERSE-X"
     }
 ]
