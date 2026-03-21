@@ -45666,5 +45666,19 @@
         "const": 15.5,
         "diff": "MAS",
         "version": "X-VERSE-X"
+    },
+    {
+        "title": "DataErr0r",
+        "artist": "Lunatic Sounds",
+        "const": 15.1,
+        "diff": "ULT",
+        "version": "AIR"
+    },
+    {
+        "title": "Parousia",
+        "artist": "xi",
+        "const": 15.1,
+        "diff": "ULT",
+        "version": "AMAZON"
     }
 ]
