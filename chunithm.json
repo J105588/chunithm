@@ -45680,5 +45680,89 @@
         "const": 15.1,
         "diff": "ULT",
         "version": "AMAZON"
+    },
+    {
+        "title": "ウルトラトレーラー",
+        "artist": "マサラダ",
+        "const": 3,
+        "diff": "BAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "ウルトラトレーラー",
+        "artist": "マサラダ",
+        "const": 6,
+        "diff": "ADV",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "ウルトラトレーラー",
+        "artist": "マサラダ",
+        "const": 9.5,
+        "diff": "EXP",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "ウルトラトレーラー",
+        "artist": "マサラダ",
+        "const": 13.5,
+        "diff": "MAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "ふぁんぶる！",
+        "artist": "藤原ハガネ",
+        "const": 3,
+        "diff": "BAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "ふぁんぶる！",
+        "artist": "藤原ハガネ",
+        "const": 7.5,
+        "diff": "ADV",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "ふぁんぶる！",
+        "artist": "藤原ハガネ",
+        "const": 11,
+        "diff": "EXP",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "ふぁんぶる！",
+        "artist": "藤原ハガネ",
+        "const": 14,
+        "diff": "MAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "僕達のギャグマンガ日和",
+        "artist": "うえだゆうじ",
+        "const": 2,
+        "diff": "BAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "僕達のギャグマンガ日和",
+        "artist": "うえだゆうじ",
+        "const": 5,
+        "diff": "ADV",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "僕達のギャグマンガ日和",
+        "artist": "うえだゆうじ",
+        "const": 10.5,
+        "diff": "EXP",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "僕達のギャグマンガ日和",
+        "artist": "うえだゆうじ",
+        "const": 13.5,
+        "diff": "MAS",
+        "version": "X-VERSE-X"
     }
 ]
