@@ -45764,5 +45764,117 @@
         "const": 13.5,
         "diff": "MAS",
         "version": "X-VERSE-X"
+    },
+    {
+        "title": "バンバード ～Piano Version～",
+        "artist": "mozell",
+        "const": 2.0,
+        "diff": "BAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "バンバード ～Piano Version～",
+        "artist": "mozell",
+        "const": 6.0,
+        "diff": "ADV",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "バンバード ～Piano Version～",
+        "artist": "mozell",
+        "const": 11.0,
+        "diff": "EXP",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "バンバード ～Piano Version～",
+        "artist": "mozell",
+        "const": 14.0,
+        "diff": "MAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "無双の咆哮 Warcry Overload",
+        "artist": "永田泰之",
+        "const": 3.0,
+        "diff": "BAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "無双の咆哮 Warcry Overload",
+        "artist": "永田泰之",
+        "const": 7.5,
+        "diff": "ADV",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "無双の咆哮 Warcry Overload",
+        "artist": "永田泰之",
+        "const": 12.0,
+        "diff": "EXP",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "無双の咆哮 Warcry Overload",
+        "artist": "永田泰之",
+        "const": 14.0,
+        "diff": "MAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "God only knows",
+        "artist": "A-One",
+        "const": 3.0,
+        "diff": "BAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "God only knows",
+        "artist": "A-One",
+        "const": 6.0,
+        "diff": "ADV",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "God only knows",
+        "artist": "A-One",
+        "const": 9.5,
+        "diff": "EXP",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "God only knows",
+        "artist": "A-One",
+        "const": 14.0,
+        "diff": "MAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "New Starlight",
+        "artist": "DiGiTAL WiNG",
+        "const": 3.0,
+        "diff": "BAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "New Starlight",
+        "artist": "DiGiTAL WiNG",
+        "const": 6.0,
+        "diff": "ADV",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "New Starlight",
+        "artist": "DiGiTAL WiNG",
+        "const": 10.0,
+        "diff": "EXP",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "New Starlight",
+        "artist": "DiGiTAL WiNG",
+        "const": 13.5,
+        "diff": "MAS",
+        "version": "X-VERSE-X"
     }
 ]
