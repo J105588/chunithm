@@ -45876,5 +45876,89 @@
         "const": 13.5,
         "diff": "MAS",
         "version": "X-VERSE-X"
+    },
+    {
+        "title": "Beenden",
+        "artist": "隣の庭は青い(庭師+Aoi)",
+        "const": 4.0,
+        "diff": "BAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "Beenden",
+        "artist": "隣の庭は青い(庭師+Aoi)",
+        "const": 8.0,
+        "diff": "ADV",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "Beenden",
+        "artist": "隣の庭は青い(庭師+Aoi)",
+        "const": 13.5,
+        "diff": "EXP",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "Beenden",
+        "artist": "隣の庭は青い(庭師+Aoi)",
+        "const": 15.1,
+        "diff": "MAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "EFX",
+        "artist": "Avans",
+        "const": 2.0,
+        "diff": "BAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "EFX",
+        "artist": "Avans",
+        "const": 6.0,
+        "diff": "ADV",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "EFX",
+        "artist": "Avans",
+        "const": 11.7,
+        "diff": "EXP",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "EFX",
+        "artist": "Avans",
+        "const": 13.9,
+        "diff": "MAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "薄明のクオリア",
+        "artist": "polysha feat. 高城みよ",
+        "const": 3.0,
+        "diff": "BAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "薄明のクオリア",
+        "artist": "polysha feat. 高城みよ",
+        "const": 7.5,
+        "diff": "ADV",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "薄明のクオリア",
+        "artist": "polysha feat. 高城みよ",
+        "const": 11.2,
+        "diff": "EXP",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "薄明のクオリア",
+        "artist": "polysha feat. 高城みよ",
+        "const": 14.3,
+        "diff": "MAS",
+        "version": "X-VERSE-X"
     }
 ]
