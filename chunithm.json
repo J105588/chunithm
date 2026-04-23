@@ -45960,5 +45960,327 @@
         "const": 14.3,
         "diff": "MAS",
         "version": "X-VERSE-X"
+    },
+    {
+        "title": "月葬",
+        "artist": "黒魔 × rintaro soma",
+        "const": 5.0,
+        "diff": "BAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "月葬",
+        "artist": "黒魔 × rintaro soma",
+        "const": 9.0,
+        "diff": "ADV",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "月葬",
+        "artist": "黒魔 × rintaro soma",
+        "const": 14.3,
+        "diff": "EXP",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "月葬",
+        "artist": "黒魔 × rintaro soma",
+        "const": 15.5,
+        "diff": "MAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "YOUNITHM",
+        "artist": "大国奏音",
+        "const": 8.0,
+        "diff": "BAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "YOUNITHM",
+        "artist": "大国奏音",
+        "const": 12.6,
+        "diff": "ADV",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "YOUNITHM",
+        "artist": "大国奏音",
+        "const": 14.8,
+        "diff": "EXP",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "YOUNITHM",
+        "artist": "大国奏音",
+        "const": 15.5,
+        "diff": "MAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "YOUNITHM",
+        "artist": "大国奏音",
+        "const": 1,
+        "diff": "ULT",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "PANDORA PARADOXXX",
+        "artist": "削除",
+        "const": 6.0,
+        "diff": "BAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "PANDORA PARADOXXX",
+        "artist": "削除",
+        "const": 11.8,
+        "diff": "ADV",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "PANDORA PARADOXXX",
+        "artist": "削除",
+        "const": 14.5,
+        "diff": "EXP",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "PANDORA PARADOXXX",
+        "artist": "削除",
+        "const": 15.6,
+        "diff": "MAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "μ3",
+        "artist": "水野健治 VS 穴山大輔",
+        "const": 11.5,
+        "diff": "ADV",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "μ3",
+        "artist": "水野健治 VS 穴山大輔",
+        "const": 14.4,
+        "diff": "EXP",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "μ3",
+        "artist": "水野健治 VS 穴山大輔",
+        "const": 15.5,
+        "diff": "MAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "†渚の小悪魔ラヴリィ～レイディオ†",
+        "artist": "夏色ビキニのPrim",
+        "const": 0.0,
+        "diff": "ADV",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "†渚の小悪魔ラヴリィ～レイディオ†",
+        "artist": "夏色ビキニのPrim",
+        "const": 0.0,
+        "diff": "EXP",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "†渚の小悪魔ラヴリィ～レイディオ†",
+        "artist": "夏色ビキニのPrim",
+        "const": 14.3,
+        "diff": "MAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "聖者の息吹",
+        "artist": "世阿弥 vs Tatsh「グルーヴコースター」",
+        "const": 3.0,
+        "diff": "BAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "聖者の息吹",
+        "artist": "世阿弥 vs Tatsh「グルーヴコースター」",
+        "const": 7.0,
+        "diff": "ADV",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "聖者の息吹",
+        "artist": "世阿弥 vs Tatsh「グルーヴコースター」",
+        "const": 12.5,
+        "diff": "EXP",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "聖者の息吹",
+        "artist": "世阿弥 vs Tatsh「グルーヴコースター」",
+        "const": 14.5,
+        "diff": "MAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "超MANJIラッシュ",
+        "artist": "Massive New Krew",
+        "const": 4.0,
+        "diff": "BAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "超MANJIラッシュ",
+        "artist": "Massive New Krew",
+        "const": 8.5,
+        "diff": "ADV",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "超MANJIラッシュ",
+        "artist": "Massive New Krew",
+        "const": 13.2,
+        "diff": "EXP",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "超MANJIラッシュ",
+        "artist": "Massive New Krew",
+        "const": 14.9,
+        "diff": "MAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "Lips XTC -Sorist Remix-",
+        "artist": "from PACA PACA PASSION Special",
+        "const": 15.1,
+        "diff": "MAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "Marigold",
+        "artist": "M2U / Arranger : M2U & NICODE / Vocal : Guriri,M2U「DEEMO」",
+        "const": 3.0,
+        "diff": "BAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "Marigold",
+        "artist": "M2U / Arranger : M2U & NICODE / Vocal : Guriri,M2U「DEEMO」",
+        "const": 7.0,
+        "diff": "ADV",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "Marigold",
+        "artist": "M2U / Arranger : M2U & NICODE / Vocal : Guriri,M2U「DEEMO」",
+        "const": 13.6,
+        "diff": "EXP",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "Marigold",
+        "artist": "M2U / Arranger : M2U & NICODE / Vocal : Guriri,M2U「DEEMO」",
+        "const": 15.2,
+        "diff": "MAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "glory MAX -to the MAXimum-",
+        "artist": "TAK",
+        "const": 3.0,
+        "diff": "BAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "glory MAX -to the MAXimum-",
+        "artist": "TAK",
+        "const": 7.0,
+        "diff": "ADV",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "glory MAX -to the MAXimum-",
+        "artist": "TAK",
+        "const": 11.5,
+        "diff": "EXP",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "glory MAX -to the MAXimum-",
+        "artist": "TAK",
+        "const": 14.8,
+        "diff": "MAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "DESTRUCTION 3,2,1",
+        "artist": "Normal1zer vs. Broken Nerdz「Phigros」",
+        "const": 5.0,
+        "diff": "BAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "DESTRUCTION 3,2,1",
+        "artist": "Normal1zer vs. Broken Nerdz「Phigros」",
+        "const": 11.6,
+        "diff": "ADV",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "DESTRUCTION 3,2,1",
+        "artist": "Normal1zer vs. Broken Nerdz「Phigros」",
+        "const": 14.1,
+        "diff": "EXP",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "DESTRUCTION 3,2,1",
+        "artist": "Normal1zer vs. Broken Nerdz「Phigros」",
+        "const": 15.4,
+        "diff": "MAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "Ré：Ré",
+        "artist": "モリモリあつし vs. uma「Muse Dash」",
+        "const": 13.8,
+        "diff": "EXP",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "Ré：Ré",
+        "artist": "モリモリあつし vs. uma「Muse Dash」",
+        "const": 15.0,
+        "diff": "MAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "ALTER EGO",
+        "artist": "Yuta Imai vs Qlarabelle「Arcaea」",
+        "const": 4.0,
+        "diff": "BAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "ALTER EGO",
+        "artist": "Yuta Imai vs Qlarabelle「Arcaea」",
+        "const": 8.0,
+        "diff": "ADV",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "ALTER EGO",
+        "artist": "Yuta Imai vs Qlarabelle「Arcaea」",
+        "const": 13.8,
+        "diff": "EXP",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "ALTER EGO",
+        "artist": "Yuta Imai vs Qlarabelle「Arcaea」",
+        "const": 15.0,
+        "diff": "MAS",
+        "version": "X-VERSE-X"
     }
 ]
