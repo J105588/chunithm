@@ -46303,5 +46303,40 @@
         "const": 13.5,
         "diff": "EXP",
         "version": "X-VERSE-X"
+    },
+    {
+        "title": "μ3",
+        "artist": "水野健治 VS 穴山大輔",
+        "const": 5,
+        "diff": "BAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "Lips XTC -Sorist Remix-",
+        "artist": "from PACA PACA PASSION Special",
+        "const": 3,
+        "diff": "BAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "Lips XTC -Sorist Remix-",
+        "artist": "from PACA PACA PASSION Special",
+        "const": 7,
+        "diff": "ADV",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "Ré：Ré",
+        "artist": "モリモリあつし vs. uma「Muse Dash」",
+        "const": 4,
+        "diff": "BAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "Ré：Ré",
+        "artist": "モリモリあつし vs. uma「Muse Dash」",
+        "const": 8.5,
+        "diff": "ADV",
+        "version": "X-VERSE-X"
     }
 ]
