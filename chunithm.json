@@ -46338,5 +46338,61 @@
         "const": 8.5,
         "diff": "ADV",
         "version": "X-VERSE-X"
+    },
+    {
+        "title": "Melodiniq",
+        "artist": "onoken a.k.a. owl*tree",
+        "const": 8.5,
+        "diff": "BAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "Melodiniq",
+        "artist": "onoken a.k.a. owl*tree",
+        "const": 13.0,
+        "diff": "ADV",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "Melodiniq",
+        "artist": "onoken a.k.a. owl*tree",
+        "const": 14.9,
+        "diff": "EXP",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "Melodiniq",
+        "artist": "onoken a.k.a. owl*tree",
+        "const": 15.6,
+        "diff": "MAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "Linked Tune",
+        "artist": "水野健治",
+        "const": 2.0,
+        "diff": "BAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "Linked Tune",
+        "artist": "水野健治",
+        "const": 6.0,
+        "diff": "ADV",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "Linked Tune",
+        "artist": "水野健治",
+        "const": 10.5,
+        "diff": "EXP",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "Linked Tune",
+        "artist": "水野健治",
+        "const": 13.5,
+        "diff": "MAS",
+        "version": "X-VERSE-X"
     }
 ]
