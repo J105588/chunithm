@@ -46394,5 +46394,152 @@
         "const": 13.5,
         "diff": "MAS",
         "version": "X-VERSE-X"
+    },
+    {
+        "title": "キスキツネ",
+        "artist": "HIMEHINA",
+        "const": 3.0,
+        "diff": "BAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "キスキツネ",
+        "artist": "HIMEHINA",
+        "const": 6.0,
+        "diff": "ADV",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "キスキツネ",
+        "artist": "HIMEHINA",
+        "const": 10.3,
+        "diff": "EXP",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "キスキツネ",
+        "artist": "HIMEHINA",
+        "const": 13.5,
+        "diff": "MAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "WWW",
+        "artist": "HIMEHINA",
+        "const": 3.0,
+        "diff": "BAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "WWW",
+        "artist": "HIMEHINA",
+        "const": 5.0,
+        "diff": "ADV",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "WWW",
+        "artist": "HIMEHINA",
+        "const": 9.0,
+        "diff": "EXP",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "WWW",
+        "artist": "HIMEHINA",
+        "const": 12.8,
+        "diff": "MAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "WWW",
+        "artist": "HIMEHINA",
+        "const": 14.2,
+        "diff": "ULT",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "うたかたよいかないで",
+        "artist": "HIMEHINA",
+        "const": 3.0,
+        "diff": "BAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "うたかたよいかないで",
+        "artist": "HIMEHINA",
+        "const": 6.0,
+        "diff": "ADV",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "うたかたよいかないで",
+        "artist": "HIMEHINA",
+        "const": 10.1,
+        "diff": "EXP",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "うたかたよいかないで",
+        "artist": "HIMEHINA",
+        "const": 13.3,
+        "diff": "MAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "花弁、それにまつわる音声",
+        "artist": "あばらや",
+        "const": 3.0,
+        "diff": "BAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "花弁、それにまつわる音声",
+        "artist": "あばらや",
+        "const": 6.0,
+        "diff": "ADV",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "花弁、それにまつわる音声",
+        "artist": "あばらや",
+        "const": 10.0,
+        "diff": "EXP",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "花弁、それにまつわる音声",
+        "artist": "あばらや",
+        "const": 13.6,
+        "diff": "MAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "愛して愛して愛して",
+        "artist": "きくお",
+        "const": 2.0,
+        "diff": "BAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "愛して愛して愛して",
+        "artist": "きくお",
+        "const": 6.0,
+        "diff": "ADV",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "愛して愛して愛して",
+        "artist": "きくお",
+        "const": 10.5,
+        "diff": "EXP",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "愛して愛して愛して",
+        "artist": "きくお",
+        "const": 14.5,
+        "diff": "MAS",
+        "version": "X-VERSE-X"
     }
 ]
