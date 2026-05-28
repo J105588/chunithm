@@ -46541,5 +46541,145 @@
         "const": 14.5,
         "diff": "MAS",
         "version": "X-VERSE-X"
+    },
+    {
+        "title": "BANG!",
+        "artist": "Shoichiro Hirata feat.Sana",
+        "const": 2.0,
+        "diff": "BAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "BANG!",
+        "artist": "Shoichiro Hirata feat.Sana",
+        "const": 5.0,
+        "diff": "ADV",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "BANG!",
+        "artist": "Shoichiro Hirata feat.Sana",
+        "const": 10.2,
+        "diff": "EXP",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "BANG!",
+        "artist": "Shoichiro Hirata feat.Sana",
+        "const": 13.3,
+        "diff": "MAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "All Over Again",
+        "artist": "Zekk",
+        "const": 3.0,
+        "diff": "BAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "All Over Again",
+        "artist": "Zekk",
+        "const": 7.5,
+        "diff": "ADV",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "All Over Again",
+        "artist": "Zekk",
+        "const": 12.2,
+        "diff": "EXP",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "All Over Again",
+        "artist": "Zekk",
+        "const": 14.8,
+        "diff": "MAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "Amatsu",
+        "artist": "Juggernaut.",
+        "const": 3.0,
+        "diff": "BAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "Amatsu",
+        "artist": "Juggernaut.",
+        "const": 7.5,
+        "diff": "ADV",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "Amatsu",
+        "artist": "Juggernaut.",
+        "const": 11.3,
+        "diff": "EXP",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "Amatsu",
+        "artist": "Juggernaut.",
+        "const": 14.5,
+        "diff": "MAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "Reverie ft. xia",
+        "artist": "Gardens",
+        "const": 3.0,
+        "diff": "BAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "Reverie ft. xia",
+        "artist": "Gardens",
+        "const": 7.5,
+        "diff": "ADV",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "Reverie ft. xia",
+        "artist": "Gardens",
+        "const": 11.6,
+        "diff": "EXP",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "Reverie ft. xia",
+        "artist": "Gardens",
+        "const": 14.7,
+        "diff": "MAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "Imprinting",
+        "artist": "Sakuzyo",
+        "const": 3.0,
+        "diff": "BAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "Imprinting",
+        "artist": "Sakuzyo",
+        "const": 8.0,
+        "diff": "ADV",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "Imprinting",
+        "artist": "Sakuzyo",
+        "const": 12.8,
+        "diff": "EXP",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "Imprinting",
+        "artist": "Sakuzyo",
+        "const": 14.4,
+        "diff": "MAS",
+        "version": "X-VERSE-X"
     }
 ]
