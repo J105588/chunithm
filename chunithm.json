@@ -46681,5 +46681,173 @@
         "const": 14.4,
         "diff": "MAS",
         "version": "X-VERSE-X"
+    },
+    {
+        "title": "恋せよ乙女！",
+        "artist": "歌：米倉千尋 作詞：Riryka（AngelNote） 作曲：Famishin（ゆずソフト） 編曲：井ノ原 智（AngelNote）「サノバウィッチ」",
+        "const": 3.0,
+        "diff": "BAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "恋せよ乙女！",
+        "artist": "歌：米倉千尋 作詞：Riryka（AngelNote） 作曲：Famishin（ゆずソフト） 編曲：井ノ原 智（AngelNote）「サノバウィッチ」",
+        "const": 7.0,
+        "diff": "ADV",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "恋せよ乙女！",
+        "artist": "歌：米倉千尋 作詞：Riryka（AngelNote） 作曲：Famishin（ゆずソフト） 編曲：井ノ原 智（AngelNote）「サノバウィッチ」",
+        "const": 10.0,
+        "diff": "EXP",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "恋せよ乙女！",
+        "artist": "歌：米倉千尋 作詞：Riryka（AngelNote） 作曲：Famishin（ゆずソフト） 編曲：井ノ原 智（AngelNote）「サノバウィッチ」",
+        "const": 13.5,
+        "diff": "MAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "sweet treasure",
+        "artist": "歌：綾地寧々（CV：桐谷華） 作詞：中山♡マミ（AngelNote） 作曲：篠原瑞希 編曲：篠原瑞希「サノバウィッチ」",
+        "const": 3.0,
+        "diff": "BAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "sweet treasure",
+        "artist": "歌：綾地寧々（CV：桐谷華） 作詞：中山♡マミ（AngelNote） 作曲：篠原瑞希 編曲：篠原瑞希「サノバウィッチ」",
+        "const": 5.0,
+        "diff": "ADV",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "sweet treasure",
+        "artist": "歌：綾地寧々（CV：桐谷華） 作詞：中山♡マミ（AngelNote） 作曲：篠原瑞希 編曲：篠原瑞希「サノバウィッチ」",
+        "const": 8.5,
+        "diff": "EXP",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "sweet treasure",
+        "artist": "歌：綾地寧々（CV：桐谷華） 作詞：中山♡マミ（AngelNote） 作曲：篠原瑞希 編曲：篠原瑞希「サノバウィッチ」",
+        "const": 12.0,
+        "diff": "MAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "さくらんぼキッス～爆発だも～ん～",
+        "artist": "KOTOKO",
+        "const": 2.0,
+        "diff": "BAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "さくらんぼキッス～爆発だも～ん～",
+        "artist": "KOTOKO",
+        "const": 5.0,
+        "diff": "ADV",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "さくらんぼキッス～爆発だも～ん～",
+        "artist": "KOTOKO",
+        "const": 9.0,
+        "diff": "EXP",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "さくらんぼキッス～爆発だも～ん～",
+        "artist": "KOTOKO",
+        "const": 12.0,
+        "diff": "MAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "空気力学少女と少年の詩",
+        "artist": "はな",
+        "const": 3.0,
+        "diff": "BAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "空気力学少女と少年の詩",
+        "artist": "はな",
+        "const": 6.0,
+        "diff": "ADV",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "空気力学少女と少年の詩",
+        "artist": "はな",
+        "const": 9.0,
+        "diff": "EXP",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "空気力学少女と少年の詩",
+        "artist": "はな",
+        "const": 12.5,
+        "diff": "MAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "こころに響く恋ほたる",
+        "artist": "橋本みゆき",
+        "const": 2.0,
+        "diff": "BAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "こころに響く恋ほたる",
+        "artist": "橋本みゆき",
+        "const": 5.0,
+        "diff": "ADV",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "こころに響く恋ほたる",
+        "artist": "橋本みゆき",
+        "const": 8.0,
+        "diff": "EXP",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "こころに響く恋ほたる",
+        "artist": "橋本みゆき",
+        "const": 11.5,
+        "diff": "MAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "Re:Still",
+        "artist": "イロドリミドリ",
+        "const": 4.0,
+        "diff": "BAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "Re:Still",
+        "artist": "イロドリミドリ",
+        "const": 8.5,
+        "diff": "ADV",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "Re:Still",
+        "artist": "イロドリミドリ",
+        "const": 11.5,
+        "diff": "EXP",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "Re:Still",
+        "artist": "イロドリミドリ",
+        "const": 15.0,
+        "diff": "MAS",
+        "version": "X-VERSE-X"
     }
 ]
