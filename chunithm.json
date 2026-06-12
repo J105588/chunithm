@@ -46849,5 +46849,12 @@
         "const": 15.0,
         "diff": "MAS",
         "version": "X-VERSE-X"
+    },
+    {
+        "title": "Philosopher",
+        "artist": "少女病",
+        "const": 15.1,
+        "diff": "ULT",
+        "version": "AIR"
     }
 ]
