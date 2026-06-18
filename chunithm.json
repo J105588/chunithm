@@ -46856,5 +46856,145 @@
         "const": 15.1,
         "diff": "ULT",
         "version": "AIR"
+    },
+    {
+        "title": "プリズム△▽リズム",
+        "artist": "Shoichiro Hirata feat.Sana",
+        "const": 2.0,
+        "diff": "BAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "プリズム△▽リズム",
+        "artist": "Shoichiro Hirata feat.Sana",
+        "const": 5.0,
+        "diff": "ADV",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "プリズム△▽リズム",
+        "artist": "Shoichiro Hirata feat.Sana",
+        "const": 10.0,
+        "diff": "EXP",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "プリズム△▽リズム",
+        "artist": "Shoichiro Hirata feat.Sana",
+        "const": 12.5,
+        "diff": "MAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "ARAIS",
+        "artist": "千本松 仁",
+        "const": 4.0,
+        "diff": "BAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "ARAIS",
+        "artist": "千本松 仁",
+        "const": 8.0,
+        "diff": "ADV",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "ARAIS",
+        "artist": "千本松 仁",
+        "const": 12.5,
+        "diff": "EXP",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "ARAIS",
+        "artist": "千本松 仁",
+        "const": 15.0,
+        "diff": "MAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "アイシング・ドリーム",
+        "artist": "曲：卯乃／歌：珠洲島 有栖(CV：長縄 まりあ)、西館 ハク(CV：佐藤 実季)",
+        "const": 2.0,
+        "diff": "BAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "アイシング・ドリーム",
+        "artist": "曲：卯乃／歌：珠洲島 有栖(CV：長縄 まりあ)、西館 ハク(CV：佐藤 実季)",
+        "const": 6.0,
+        "diff": "ADV",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "アイシング・ドリーム",
+        "artist": "曲：卯乃／歌：珠洲島 有栖(CV：長縄 まりあ)、西館 ハク(CV：佐藤 実季)",
+        "const": 9.0,
+        "diff": "EXP",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "アイシング・ドリーム",
+        "artist": "曲：卯乃／歌：珠洲島 有栖(CV：長縄 まりあ)、西館 ハク(CV：佐藤 実季)",
+        "const": 12.5,
+        "diff": "MAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "いちげき！のテーマ",
+        "artist": "曲：ヒゲドライバー／歌：いちげきしゅーたーず！",
+        "const": 3.0,
+        "diff": "BAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "いちげき！のテーマ",
+        "artist": "曲：ヒゲドライバー／歌：いちげきしゅーたーず！",
+        "const": 6.0,
+        "diff": "ADV",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "いちげき！のテーマ",
+        "artist": "曲：ヒゲドライバー／歌：いちげきしゅーたーず！",
+        "const": 11.5,
+        "diff": "EXP",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "いちげき！のテーマ",
+        "artist": "曲：ヒゲドライバー／歌：いちげきしゅーたーず！",
+        "const": 14.0,
+        "diff": "MAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "Pastel Sprinkles",
+        "artist": "pan",
+        "const": 3.0,
+        "diff": "BAS",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "Pastel Sprinkles",
+        "artist": "pan",
+        "const": 6.0,
+        "diff": "ADV",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "Pastel Sprinkles",
+        "artist": "pan",
+        "const": 12.5,
+        "diff": "EXP",
+        "version": "X-VERSE-X"
+    },
+    {
+        "title": "Pastel Sprinkles",
+        "artist": "pan",
+        "const": 14.0,
+        "diff": "MAS",
+        "version": "X-VERSE-X"
     }
 ]
